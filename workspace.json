@@ -1,0 +1,2612 @@
+{
+  "id" : 1,
+  "name" : "Mi Mercado",
+  "description" : "Description",
+  "lastModifiedDate" : "2023-11-02T04:04:31Z",
+  "lastModifiedAgent" : "structurizr-javascript",
+  "properties" : {
+    "structurizr.dsl" : "d29ya3NwYWNlICJNaSBNZXJjYWRvInsKCiAgICBtb2RlbCB7CiAgICAgICAgYWRtaW4gPSBwZXJzb24gIkFkbWluaXN0cmFkb3IiICJVc3VhcmlvIGRlIHRpcG8gYWRtaW5pc3RyYWRvciIKICAgICAgICBwcm92aWRlciA9IHBlcnNvbiAiUHJvdmVlZG9yIiAiVXN1YXJpbyBkZSB0aXBvIHByb3ZlZWRvciIKCiAgICAgICAgc3lzdGVtID0gc29mdHdhcmVTeXN0ZW0gIk1pIE1lcmNhZG8gLSAyMDIzIiAiU29mdHdhcmUgcGFyYSBsYSBhZG1pbmlzdHJhY2nDs24gb2ZlcnRhcyBlbXByZXNhcmlhbGVzInsKICAgICAgICAgICAgZ3JvdXAgIlNpbmdsZSBQYWdlIEFwcGxpY2F0aW9ucyAtIEZyb250LWVuZCJ7CiAgICAgICAgICAgICAgICBzcGFBZG1pbiA9IGNvbnRhaW5lciAiU1BBIC0gQWRtaW5pc3RyYWRvciIgIkFwbGljYWNpw7NuIHdlYiBwYXJhIHBlcmZpbCBhZG1pbmlzdHJhZG9yIiAiSmF2YVNjcmlwdCAtIEFuZ3VsYXIiICJXZWIgQnJvd3NlciIKICAgICAgICAgICAgICAgIHNwYVByb3ZpZGVyID0gY29udGFpbmVyICJTUEEgLSBQcm92ZWVkb3IiICJBcGxpY2FjacOzbiB3ZWIgcGFyYSBwZXJmaWwgcHJvdmVlZG9yIiAiSmF2YVNjcmlwdCAtIEFuZ3VsYXIiICJXZWIgQnJvd3NlciIKICAgICAgICAgICAgfQogICAgICAgICAgICAKICAgICAgICAgICAgZ3JvdXAgIk1pY3Jvc2VydmljaW9zIC0gQmFjay1lbmQiewogICAgICAgICAgICAgICAgbXNBdXRoID0gY29udGFpbmVyICJBUEkgbXNfYXV0aCIgIkNvbnRpZW5lIGxhIGxvZ2ljYSBkZSB1c3VhcmlvcyB5IGF1dGVudGljYWNpw7NuLiIgIkphdmEgLSBTcHJpbmdCb290IEFQSSJ7CiAgICAgICAgICAgICAgICAgICAgZ3JvdXAgImF1dGgiIHsKICAgICAgICAgICAgICAgICAgICAgICAgYXV0aENvbnRyb2xsZXIgPSBjb21wb25lbnQgIkF1dGhDb250cm9sbGVyIiAiUGVybWl0ZSBhIGxvcyB1c3VhcmlvcyBpbmljaWFyIHNlc2lvbiIgIlNwcmluZyBNVkMgLSBSZXN0IENvbnRyb2xsZXIiCiAgICAgICAgICAgICAgICAgICAgICAgIGF1dGhTZXJ2aWNlID0gY29tcG9uZW50ICJBdXRoU2VydmljZSIgIkNvbnRpZW5lIGxhIGxvZ2ljYSBkZSBpbmljaW8gZGUgc2VzacOzbiIgIlNwcmluZyBNVkMgLSBTZXJ2aWNlIgogICAgICAgICAgICAgICAgICAgICAgICBzZWN1cml0eUNvbXBvbmVudCA9IGNvbXBvbmVudCAiU2VjdXJpdHkgQ29tcG9uZW50IiAiQWRtaW5pc3RyYSBhdXRlbnRpY2FjacOzbiBkZSB1c3VhcmlvcyB5IHByb3RlZ2UgbG9zIHJlY3Vyc29zIHkgc2VydmljaW9zIHdlYiIgIlNwcmluZyBzZWN1cml0eSIKICAgICAgICAgICAgICAgICAgICB9CgogICAgICAgICAgICAgICAgICAgIGdyb3VwICJ1c2VyIiB7CiAgICAgICAgICAgICAgICAgICAgICAgIGF1dGhVc2VyQ29udHJvbGxlciA9IGNvbXBvbmVudCAiQXV0aFVzZXJDb250cm9sbGVyIiAiUGVybWl0ZSBhIGxvcyB1c3VhcmlvcyBsYSBnZXN0aW9uIGRlIGxhIGN1ZW50YSIgIlNwcmluZyBNVkMgLSBSZXN0IENvbnRyb2xsZXIiCiAgICAgICAgICAgICAgICAgICAgICAgIGF1dGhVc2VyU2VydmljZSA9IGNvbXBvbmVudCAiQXV0aFVzZXJTZXJ2aWNlIiAiQ29udGllbmUgbGEgbG9naWNhIGRlIGxhIGN1ZW50YSBkZSB1c3VhcmlvLiIgIlNwcmluZyBNVkMgLSBTZXJ2aWNlIgogICAgICAgICAgICAgICAgICAgICAgICBhdXRoVXNlclJlcG9zaXRvcnkgPSBjb21wb25lbnQgIkF1dGhVc2VyUmVwb3NpdG9yeSIgIiBJbnRlcmZheiBvcGVyYWNpb25lcyBkZSBhY2Nlc28gYSBkYXRvcyIgIlNwcmluZyBNVkMgLSBSZXBvc2l0b3J5IgogICAgICAgICAgICAgICAgICAgIH0KCiAgICAgICAgICAgICAgICAgICAgZ3JvdXAgInJlc3RvcmVwYXNzIiB7CiAgICAgICAgICAgICAgICAgICAgICAgIHJlc3RvcmVQYXNzQ29udHJvbGxlciA9IGNvbXBvbmVudCAiUmVzdG9yZVBhc3NDb250cm9sbGVyIiAiUGVybWl0ZSBhIGxvcyB1c3VhcmlvcyBsYSByZWN1cGVyYWNpw7NuIGRlIGNvbnRyYXNlw7FhIiAiU3ByaW5nIE1WQyAtIFJlc3QgQ29udHJvbGxlciIKICAgICAgICAgICAgICAgICAgICAgICAgcmVzdG9yZVBhc3NTZXJ2aWNlID0gY29tcG9uZW50ICJSZXN0b3JlUGFzc1NlcnZpY2UiICJDb250aWVuZSBsYSBsb2dpY2EgZGUgcmVjdXBlcmFjacOzbiBkZSBjb250cmFzZcOxYSIgIlNwcmluZyBNVkMgLSBTZXJ2aWNlIgogICAgICAgICAgICAgICAgICAgICAgICByZXN0b3JlUGFzc1JlcG9zaXRvcnkgPSBjb21wb25lbnQgIlJlc3RvcmVQYXNzUmVwb3NpdG9yeSIgIiBJbnRlcmZheiBvcGVyYWNpb25lcyBkZSBhY2Nlc28gYSBkYXRvcyIgIlNwcmluZyBNVkMgLSBSZXBvc2l0b3J5IgogICAgICAgICAgICAgICAgICAgIH0KCiAgICAgICAgICAgICAgICAgICAgZ3JvdXAgInNlbmRvdHAiIHsKICAgICAgICAgICAgICAgICAgICAgICAgYXV0aENvZGVDb250cm9sbGVyID0gY29tcG9uZW50ICJBdXRoQ29kZUNvbnRyb2xsZXIiICJQZXJtaXRlIGEgbG9zIHVzdWFyaW9zIGxhIGdlbmVyYWNpb24gZGUgT1RQIHBhcmEgcmVnaXN0cm8uIiAiU3ByaW5nIE1WQyAtIFJlc3QgQ29udHJvbGxlciIKICAgICAgICAgICAgICAgICAgICAgICAgYXV0aENvZGVTZXJ2aWNlID0gY29tcG9uZW50ICJBdXRoQ29kZVNlcnZpY2UiICJDb250aWVuZSBsYSBsb2dpY2EgZ2VuZXJhY2lvbiB5IGVudmlvIGRlIE9UUCIgIlNwcmluZyBNVkMgLSBTZXJ2aWNlIgogICAgICAgICAgICAgICAgICAgICAgICBhdXRoQ29kZVJlcG9zaXRvcnkgPSBjb21wb25lbnQgIkF1dGhDb2RlUmVwb3NpdG9yeSIgIiBJbnRlcmZheiBvcGVyYWNpb25lcyBkZSBhY2Nlc28gYSBkYXRvcyIgIlNwcmluZyBNVkMgLSBSZXBvc2l0b3J5IgogICAgICAgICAgICAgICAgICAgIH0KCiAgICAgICAgICAgICAgICAgICAgZW1haWxTZXJ2aWNlID0gY29tcG9uZW50ICJFbWFpbFNlcnZpY2UiICJDb250aWVuZSBsYSBsb2dpY2EgZGVsIGVudmlvIGRlIGNvcnJlb3MgZWxlY3Ryb25pY29zIiAiU3ByaW5nIE1WQyAtIFNlcnZpY2UiCgogICAgICAgICAgICAgICAgfQogICAgICAgICAgICAKICAgICAgICAgICAgICAgIG1zUHJvdmlkZXIgPSBjb250YWluZXIgIkFQSSBtc19wcm92ZWVkb3IiICJDb250aWVuZSBsYSBsw7NnaWNhIGRlIHByb3ZlZWRvcmVzIiAiSmF2YSAtIFNwcmluZ0Jvb3QgQVBJInsKICAgICAgICAgICAgICAgICAgICBncm91cCAicHJvdmlkZXIiIHsKICAgICAgICAgICAgICAgICAgICAgICAgICAgIHByb3ZpZGVyQ29udHJvbGxlciA9IGNvbXBvbmVudCAiUHJvdmlkZXJDb250cm9sbGVyIiAiUGVybWl0ZSBhIGxvcyB1c3VhcmlvcyBsYSBnZXN0aW9uIGRlIGRhdG9zIGRlIHByb3ZlZWRvci4iICJTcHJpbmcgTVZDIC0gUmVzdCBDb250cm9sbGVyIgogICAgICAgICAgICAgICAgICAgICAgICAgICAgcHJvdmlkZXJTZXJ2aWNlID0gY29tcG9uZW50ICJQcm92aWRlclNlcnZpY2UiICJDb250aWVuZSBsYSBsb2dpY2EgcGFyYSBsYSBhZG1pbmlzdHJhY2lvbiBkZSBwcm92ZWVkb3IiICJTcHJpbmcgTVZDIC0gU2VydmljZSIKICAgICAgICAgICAgICAgICAgICAgICAgICAgIHByb3ZpZGVyUmVwb3NpdG9yeSA9IGNvbXBvbmVudCAiUHJvdmlkZXJSZXBvc2l0b3J5IiAiIEludGVyZmF6IG9wZXJhY2lvbmVzIGRlIGFjY2VzbyBhIGRhdG9zIiAiU3ByaW5nIE1WQyAtIFJlcG9zaXRvcnkiCiAgICAgICAgICAgICAgICAgICAgICAgICAgICBwcm92aWRlclVzZXJSZXBvc2l0b3J5ID0gY29tcG9uZW50ICJQcm92aWRlclVzZXJSZXBvc2l0b3J5IiAiIEludGVyZmF6IG9wZXJhY2lvbmVzIGRlIGFjY2VzbyBhIGRhdG9zIiAiU3ByaW5nIE1WQyAtIFJlcG9zaXRvcnkiCiAgICAgICAgICAgICAgICAgICAgfQoKICAgICAgICAgICAgICAgICAgICAgZ3JvdXAgInByb3ZpZGVydHlwZSIgewogICAgICAgICAgICAgICAgICAgICAgICAgICAgcHJvdmlkZXJUeXBlQ29udHJvbGxlciA9IGNvbXBvbmVudCAiUHJvdmlkZXJUeXBlQ29udHJvbGxlciIgIlBlcm1pdGUgYSBsb3MgdXN1YXJpb3MgbGEgZ2VzdGlvbiBkZSB0aXBvIGRlIHByb3ZlZWRvci4iICJTcHJpbmcgTVZDIC0gUmVzdCBDb250cm9sbGVyIgogICAgICAgICAgICAgICAgICAgICAgICAgICAgcHJvdmlkZXJUeXBlU2VydmljZSA9IGNvbXBvbmVudCAiUHJvdmlkZXJUeXBlU2VydmljZSIgIkNvbnRpZW5lIGxhIGxvZ2ljYSBwYXJhIGxhIGFkbWluaXN0cmFjaW9uIGRlIHRpcG8gZGUgcHJvdmVlZG9yIiAiU3ByaW5nIE1WQyAtIFNlcnZpY2UiCiAgICAgICAgICAgICAgICAgICAgICAgICAgICBwcm92aWRlclR5cGVSZXBvc2l0b3J5ID0gY29tcG9uZW50ICJQcm92aWRlclR5cGVSZXBvc2l0b3J5IiAiIEludGVyZmF6IG9wZXJhY2lvbmVzIGRlIGFjY2VzbyBhIGRhdG9zIiAiU3ByaW5nIE1WQyAtIFJlcG9zaXRvcnkiCiAgICAgICAgICAgICAgICAgICAgICAgICAgICBwcm92aWRlclR5cGVGaWxlc1JlcG9zaXRvcnkgPSBjb21wb25lbnQgIlByb3ZpZGVyVHlwZUZpbGVzUmVwb3NpdG9yeSIgIiBJbnRlcmZheiBvcGVyYWNpb25lcyBkZSBhY2Nlc28gYSBkYXRvcyIgIlNwcmluZyBNVkMgLSBSZXBvc2l0b3J5IgogICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgfQoKICAgICAgICAgICAgICAgIH0KCiAgICAgICAgICAgICAgICBtc0RhdGEgPSBjb250YWluZXIgIkFQSSBtc19kYXRhIiAiQ29udGllbmUgbGEgbMOzZ2ljYSBkZSBkYXRvcyIgIkphdmEgLSBTcHJpbmdCb290IEFQSSJ7CiAgICAgICAgICAgICAgICAgICAgIGdyb3VwICJhenVyZWZpbGUiIHsKICAgICAgICAgICAgICAgICAgICAgICAgICAgIGF6dXJlRmlsZUNvbnRyb2xsZXIgPSBjb21wb25lbnQgIkF6dXJlRmlsZUNvbnRyb2xsZXIiICJQZXJtaXRlIGEgbG9zIHVzdWFyaW9zIGxhIGdlc3Rpb24gZGUgYXJjaGl2b3MiICJTcHJpbmcgTVZDIC0gUmVzdCBDb250cm9sbGVyIgogICAgICAgICAgICAgICAgICAgICAgICAgICAgYXp1cmVGaWxlU2VydmljZSA9IGNvbXBvbmVudCAiQXp1cmVGaWxlU2VydmljZSIgIkNvbnRpZW5lIGxhIGxvZ2ljYSBwYXJhIGxhIGdlc3Rpb24gZGUgYXJjaGl2b3MiICJTcHJpbmcgTVZDIC0gU2VydmljZSIKICAgICAgICAgICAgICAgICAgICAgICAgICAgIGF6dXJlRmlsZVJlcG9zaXRvcnkgPSBjb21wb25lbnQgIkF6dXJlRmlsZVJlcG9zaXRvcnkiICIgSW50ZXJmYXogb3BlcmFjaW9uZXMgZGUgYWNjZXNvIGEgZGF0b3MiICJTcHJpbmcgTVZDIC0gUmVwb3NpdG9yeSIKICAgICAgICAgICAgICAgICAgICB9CgogICAgICAgICAgICAgICAgICAgICBncm91cCAiY2l0eSIgewogICAgICAgICAgICAgICAgICAgICAgICAgICAgY2l0eUNvbnRyb2xsZXIgPSBjb21wb25lbnQgIkNpdHlDb250cm9sbGVyIiAiUGVybWl0ZSBhIGxvcyB1c3VhcmlvcyBsYSBnZXN0aW9uIGNpdWRhZCIgIlNwcmluZyBNVkMgLSBSZXN0IENvbnRyb2xsZXIiCiAgICAgICAgICAgICAgICAgICAgICAgICAgICBjaXR5U2VydmljZSA9IGNvbXBvbmVudCAiQ2l0eVNlcnZpY2UiICJDb250aWVuZSBsYSBsb2dpY2EgcGFyYSBsYSBhZG1pbmlzdHJhY2lvbiBkZSBjaXVkYWQiICJTcHJpbmcgTVZDIC0gU2VydmljZSIKICAgICAgICAgICAgICAgICAgICAgICAgICAgIGNpdHlSZXBvc2l0b3J5ID0gY29tcG9uZW50ICJDaXR5UmVwb3NpdG9yeSIgIiBJbnRlcmZheiBvcGVyYWNpb25lcyBkZSBhY2Nlc28gYSBkYXRvcyIgIlNwcmluZyBNVkMgLSBSZXBvc2l0b3J5IgogICAgICAgICAgICAgICAgICAgIH0KCiAgICAgICAgICAgICAgICAgICAgIGdyb3VwICJkZXBhcnRtZW50IiB7CiAgICAgICAgICAgICAgICAgICAgICAgICAgICBkZXBhcnRtZW50Q29udHJvbGxlciA9IGNvbXBvbmVudCAiRGVwYXJ0bWVudENvbnRyb2xsZXIiICJQZXJtaXRlIGEgbG9zIHVzdWFyaW9zIGxhIGdlc3Rpb24gZGUgZGVwYXJ0YW1lbnRvcyIgIlNwcmluZyBNVkMgLSBSZXN0IENvbnRyb2xsZXIiCiAgICAgICAgICAgICAgICAgICAgICAgICAgICBkZXBhcnRtZW50U2VydmljZSA9IGNvbXBvbmVudCAiRGVwYXJ0bWVudFNlcnZpY2UiICJDb250aWVuZSBsYSBsb2dpY2EgcGFyYSBsYSBhZG1pbmlzdHJhY2lvbiBkZSBkZXBhcnRhbWVudG9zIiAiU3ByaW5nIE1WQyAtIFNlcnZpY2UiCiAgICAgICAgICAgICAgICAgICAgICAgICAgICBkZXBhcnRtZW50UmVwb3NpdG9yeSA9IGNvbXBvbmVudCAiRGVwYXJ0bWVudFJlcG9zaXRvcnkiICIgSW50ZXJmYXogb3BlcmFjaW9uZXMgZGUgYWNjZXNvIGEgZGF0b3MiICJTcHJpbmcgTVZDIC0gUmVwb3NpdG9yeSIKICAgICAgICAgICAgICAgICAgICB9CgogICAgICAgICAgICAgICAgICAgICBncm91cCAicGFyYW1zZmlsZXMiIHsKICAgICAgICAgICAgICAgICAgICAgICAgICAgIHBhcmFtRmlsZXNDb250cm9sbGVyID0gY29tcG9uZW50ICJQYXJhbUZpbGVzQ29udHJvbGxlciIgIlBlcm1pdGUgYSBsb3MgdXN1YXJpb3MgbGEgZ2VzdGlvbiBkZSBwYXJhbWV0cm9zIGRlIGFyY2hpdm8iICJTcHJpbmcgTVZDIC0gUmVzdCBDb250cm9sbGVyIgogICAgICAgICAgICAgICAgICAgICAgICAgICAgcGFyYW1GaWxlc1NlcnZpY2UgPSBjb21wb25lbnQgIlBhcmFtRmlsZXNTZXJ2aWNlIiAiQ29udGllbmUgbGEgbG9naWNhIHBhcmEgbGEgYWRtaW5pc3RyYWNpb24gZGUgcGFyYW1ldHJvcyBkZSBhcmNoaXZvIiAiU3ByaW5nIE1WQyAtIFNlcnZpY2UiCiAgICAgICAgICAgICAgICAgICAgICAgICAgICBwYXJhbUZpbGVzUmVwb3NpdG9yeSA9IGNvbXBvbmVudCAiUGFyYW1GaWxlc1JlcG9zaXRvcnkiICIgSW50ZXJmYXogb3BlcmFjaW9uZXMgZGUgYWNjZXNvIGEgZGF0b3MiICJTcHJpbmcgTVZDIC0gUmVwb3NpdG9yeSIKICAgICAgICAgICAgICAgICAgICB9CgogICAgICAgICAgICAgICAgICAgICBncm91cCAicHJvZHVjdGNhdGVnb3J5IiB7CiAgICAgICAgICAgICAgICAgICAgICAgICAgICBwcm9kdWN0Q2F0ZWdvcnlDb250cm9sbGVyID0gY29tcG9uZW50ICJQcm9kdWN0Q2F0ZWdvcnlDb250cm9sbGVyIiAiUGVybWl0ZSBhIGxvcyB1c3VhcmlvcyBsYSBnZXN0aW9uIGRlIGNhdGVnb3JpYXMgZGUgcHJvZHVjdG8iICJTcHJpbmcgTVZDIC0gUmVzdCBDb250cm9sbGVyIgogICAgICAgICAgICAgICAgICAgICAgICAgICAgcHJvZHVjdENhdGVnb3J5U2VydmljZSA9IGNvbXBvbmVudCAiUHJvZHVjdENhdGVnb3J5U2VydmljZSIgIkNvbnRpZW5lIGxhIGxvZ2ljYSBwYXJhIGxhIGFkbWluaXN0cmFjaW9uIGRlIGNhdGVnb3JpYXMgZGUgcHJvZHVjdG8iICJTcHJpbmcgTVZDIC0gU2VydmljZSIKICAgICAgICAgICAgICAgICAgICAgICAgICAgIHByb2R1Y3RDYXRlZ29yeVJlcG9zaXRvcnkgPSBjb21wb25lbnQgIlByb2R1Y3RDYXRlZ29yeVJlcG9zaXRvcnkiICIgSW50ZXJmYXogb3BlcmFjaW9uZXMgZGUgYWNjZXNvIGEgZGF0b3MiICJTcHJpbmcgTVZDIC0gUmVwb3NpdG9yeSIKICAgICAgICAgICAgICAgICAgICB9CiAgICAgICAgICAgICAgICAgICAgIGdyb3VwICJ1bml0IiB7CiAgICAgICAgICAgICAgICAgICAgICAgICAgICB1bml0Q29udHJvbGxlciA9IGNvbXBvbmVudCAiUHJvdmlkZXJDb250cm9sbGVyIiAiUGVybWl0ZSBhIGxvcyB1c3VhcmlvcyBsYSBnZXN0aW9uIGRlIHVuaWRhZGVzIiAiU3ByaW5nIE1WQyAtIFJlc3QgQ29udHJvbGxlciIKICAgICAgICAgICAgICAgICAgICAgICAgICAgIHVuaXRTZXJ2aWNlID0gY29tcG9uZW50ICJQcm92aWRlclNlcnZpY2UiICJDb250aWVuZSBsYSBsb2dpY2EgcGFyYSBsYSBhZG1pbmlzdHJhY2lvbiBkZSB1bmlkYWRlcyIgIlNwcmluZyBNVkMgLSBTZXJ2aWNlIgogICAgICAgICAgICAgICAgICAgICAgICAgICAgdW5pdFJlcG9zaXRvcnkgPSBjb21wb25lbnQgIlByb3ZpZGVyUmVwb3NpdG9yeSIgIiBJbnRlcmZheiBvcGVyYWNpb25lcyBkZSBhY2Nlc28gYSBkYXRvcyIgIlNwcmluZyBNVkMgLSBSZXBvc2l0b3J5IgogICAgICAgICAgICAgICAgICAgIH0KCiAgICAgICAgICAgICAgICB9CiAgICAgICAgICAgICAgICBtc01hcmtldCA9IGNvbnRhaW5lciAiQVBJIG1zX21hcmtldCIgIkNvbnRpZW5lIGxhIGzDs2dpY2EgZGUgbWVyY2FkbyIgIkphdmEgLSBTcHJpbmdCb290IEFQSSJ7CiAgICAgICAgICAgICAgICAgICAgIGdyb3VwICJjYXRhbG9nIiB7CiAgICAgICAgICAgICAgICAgICAgICAgICAgICBjYXRhbG9nQ29udHJvbGxlciA9IGNvbXBvbmVudCAiQ2F0YWxvZ0NvbnRyb2xsZXIiICJQZXJtaXRlIGEgbG9zIHVzdWFyaW9zIGxhIGdlc3Rpb24gZGVsIGNhdGFsb2dvIiAiU3ByaW5nIE1WQyAtIFJlc3QgQ29udHJvbGxlciIKICAgICAgICAgICAgICAgICAgICAgICAgICAgIGNhdGFsb2dTZXJ2aWNlID0gY29tcG9uZW50ICJDYXRhbG9nU2VydmljZSIgIkNvbnRpZW5lIGxhIGxvZ2ljYSBwYXJhIGxhIGFkbWluaXN0cmFjaW9uIGRlIGNhdGFsb2dvIiAiU3ByaW5nIE1WQyAtIFNlcnZpY2UiCiAgICAgICAgICAgICAgICAgICAgICAgICAgICBjYXRhbG9nUmVwb3NpdG9yeSA9IGNvbXBvbmVudCAiQ2F0YWxvZ1JlcG9zaXRvcnkiICIgSW50ZXJmYXogb3BlcmFjaW9uZXMgZGUgYWNjZXNvIGEgZGF0b3MiICJTcHJpbmcgTVZDIC0gUmVwb3NpdG9yeSIKICAgICAgICAgICAgICAgICAgICAgICAgICAgIHByb2R1Y3RSZXBvc2l0b3J5ID0gY29tcG9uZW50ICJQcm9kdWN0UmVwb3NpdG9yeSIgIiBJbnRlcmZheiBvcGVyYWNpb25lcyBkZSBhY2Nlc28gYSBkYXRvcyIgIlNwcmluZyBNVkMgLSBSZXBvc2l0b3J5IgogICAgICAgICAgICAgICAgICAgIH0KICAgICAgICAgICAgICAgICAgICAgZ3JvdXAgInBhcmFtc3RhdGUiIHsKICAgICAgICAgICAgICAgICAgICAgICAgICAgIHBhcmFtU3RhdGVDb250cm9sbGVyID0gY29tcG9uZW50ICJQYXJhbVN0YXRlQ29udHJvbGxlciIgIlBlcm1pdGUgYSBsb3MgdXN1YXJpb3MgbGEgZ2VzdGlvbiBkZSBwYXJhbWV0cm9zIGRlIGVzdGFkbyIgIlNwcmluZyBNVkMgLSBSZXN0IENvbnRyb2xsZXIiCiAgICAgICAgICAgICAgICAgICAgICAgICAgICBwYXJhbVN0YXRlU2VydmljZSA9IGNvbXBvbmVudCAiUGFyYW1TdGF0ZVNlcnZpY2UiICJDb250aWVuZSBsYSBsb2dpY2EgcGFyYSBsYSBhZG1pbmlzdHJhY2lvbiBkZSBwYXJhbWV0cm9zIGRlIGVzdGFkbyIgIlNwcmluZyBNVkMgLSBTZXJ2aWNlIgogICAgICAgICAgICAgICAgICAgICAgICAgICAgcGFyYW1TdGF0ZVJlcG9zaXRvcnkgPSBjb21wb25lbnQgIlBhcmFtU3RhdGVSZXBvc2l0b3J5IiAiIEludGVyZmF6IG9wZXJhY2lvbmVzIGRlIGFjY2VzbyBhIGRhdG9zIiAiU3ByaW5nIE1WQyAtIFJlcG9zaXRvcnkiCiAgICAgICAgICAgICAgICAgICAgfQogICAgICAgICAgICAgICAgICAgICBncm91cCAicHJvdmlkZXJyZWdpc3RlciIgewogICAgICAgICAgICAgICAgICAgICAgICAgICAgcHJvdmlkZXJSZWdpc3RlckNvbnRyb2xsZXIgPSBjb21wb25lbnQgIlByb3ZpZGVyUmVnaXN0ZXJDb250cm9sbGVyIiAiUGVybWl0ZSBhIGxvcyB1c3VhcmlvcyBlbCByZWdpc3RybyBkZSBpbmZvcm1hY2lvbiBkZSBwcm92ZWVkb3IiICJTcHJpbmcgTVZDIC0gUmVzdCBDb250cm9sbGVyIgogICAgICAgICAgICAgICAgICAgICAgICAgICAgcHJvdmlkZXJSZWdpc3RlclNlcnZpY2UgPSBjb21wb25lbnQgIlByb3ZpZGVyUmVnaXN0ZXJTZXJ2aWNlIiAiQ29udGllbmUgbGEgbG9naWNhIGRlbCByZWdpc3RybyBkZSBpbmZvcm1hY2lvbiBkZSBwcm92ZWVkb3IiICJTcHJpbmcgTVZDIC0gU2VydmljZSIKICAgICAgICAgICAgICAgICAgICAgICAgICAgIHByb3ZpZGVyUmVnaXN0ZXJSZXBvc2l0b3J5ID0gY29tcG9uZW50ICJQcm92aWRlclJlZ2lzdGVyUmVwb3NpdG9yeSIgIiBJbnRlcmZheiBvcGVyYWNpb25lcyBkZSBhY2Nlc28gYSBkYXRvcyIgIlNwcmluZyBNVkMgLSBSZXBvc2l0b3J5IgogICAgICAgICAgICAgICAgICAgICAgICAgICAgcHJvdmlkZXJGaWxlU3RhdHVzUmVwb3NpdG9yeSA9IGNvbXBvbmVudCAiUHJvdmlkZXJGaWxlU3RhdHVzUmVwb3NpdG9yeSIgIiBJbnRlcmZheiBvcGVyYWNpb25lcyBkZSBhY2Nlc28gYSBkYXRvcyIgIlNwcmluZyBNVkMgLSBSZXBvc2l0b3J5IgogICAgICAgICAgICAgICAgICAgIH0KICAgICAgICAgICAgICAgICAgICAgcHJvdmlkZXJDbGllbnQgPSBjb21wb25lbnQgIkNsaWVudGUgcHJvdmVlZG9yIEFQSSIgIkNsaWVudGUgZGVsIEFQSSBkZSBwcm92ZWVkb3IgbXNfcHJvdmlkZXIiICJKYXZhIFdlYkNsaWVudCIKICAgICAgICAgICAgICAgIH0KCiAgICAgICAgICAgICAgICBtc0F1dGhEQiA9IGNvbnRhaW5lciAiQkQgbW1fYXV0aCIgIkFsbWFjZW5hIGRhdG9zIGRlIHVzdWFyaW9zIHkgY3JlZGVuY2lhbGVzLiIgIlNRTCBTZXJ2ZXIiICJEYXRhYmFzZSIKICAgICAgICAgICAgICAgIG1zUHJvdmlkZXJEQiA9IGNvbnRhaW5lciAiQkQgbW1fcHJvdmlkZXIiICJBbG1hY2VuYSBkYXRvcyBkZSBwcm92ZWVkb3JlcyIgIlNRTCBTZXJ2ZXIiICJEYXRhYmFzZSIKICAgICAgICAgICAgICAgIG1zRGF0YURCID0gY29udGFpbmVyICJCRCBtbV9kYXRhIiAiQWxtYWNlbmEgcmVnaXN0cm9zIHJlbGFjaW9uYWRvcyBjb24gYXJjaGl2b3MuIiAiU1FMIFNlcnZlciIgIkRhdGFiYXNlIgogICAgICAgICAgICAgICAgbXNNYXJrZXREQiA9IGNvbnRhaW5lciAiQkQgbW1fbWFya2V0IiAiQWxtYWNlbmEgZGF0b3MgZGUgbWVyY2Fkby4iICJTUUwgU2VydmVyIiAiRGF0YWJhc2UiCiAgICAgICAgICAgIH0KICAgICAgICAgICAKICAgICAgICAgICAgCiAgICAgICAgfQogICAgICAgIGVtYWlsU3lzdGVtID0gc29mdHdhcmVTeXN0ZW0gIkVtYWlsIC0gU01UUCIgIkVudmlvIGRlIGNvcnJlb3MgYSB0cmF2ZXMgZGUgc2Vydmlkb3IgU01UUCIgIkV4aXN0aW5nIFN5c3RlbSIKICAgICAgICAKICAgICAgICAjUmVsYXRpb25zaGlwcwogICAgICAgIHN5c3RlbSAtPiBlbWFpbFN5c3RlbSAiRW52w61hIGNvcnJlbyBlbGVjdHLDs25pY28gdXNhbmRvIiAKICAgICAgICBhZG1pbiAtPiBzcGFBZG1pbiAiVXRpbGl6YSIKICAgICAgICBwcm92aWRlciAtPiBzcGFQcm92aWRlciAiVXRpbGl6YSIKCiAgICAgICAgI1JlbGF0aW9uc2hpcHMgbWljcm9zZXJ2aWNlcy0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLQogICAgICAgIG1zQXV0aCAtPiBtc0F1dGhEQiAiUmVhbGl6YSBsZWN0dXJhIHkgZXNjcml0dXJhIiAiU3ByaW5nIERhdGEvSlBBIgogICAgICAgIG1zUHJvdmlkZXIgLT4gbXNQcm92aWRlckRCICJSZWFsaXphICBsZWN0dXJhIHkgZXNjcml0dXJhIiAiU3ByaW5nIERhdGEvSlBBIgogICAgICAgIG1zRGF0YSAtPiBtc0RhdGFEQiAiUmVhbGl6YSBsZWN0dXJhIHkgZXNjcml0dXJhIiAiU3ByaW5nIERhdGEvSlBBIgogICAgICAgIG1zTWFya2V0IC0+IG1zTWFya2V0REIgIlJlYWxpemEgbGVjdHVyYSB5IGVzY3JpdHVyYSIgIlNwcmluZyBEYXRhL0pQQSIKICAgICAgICBzcGFBZG1pbiAtPiBtc0F1dGggIlJlYWxpemEgbGxhbWFkYXMgQVBJIGEiICJKU09OL0hUVFAiCiAgICAgICAgc3BhUHJvdmlkZXIgLT4gbXNBdXRoICJSZWFsaXphIGxsYW1hZGFzIEFQSSBhIiAiSlNPTi9IVFRQIgogICAgICAgIHNwYUFkbWluIC0+IG1zTWFya2V0ICJSZWFsaXphIGxsYW1hZGFzIEFQSSBhIiAiSlNPTi9IVFRQIgogICAgICAgIHNwYVByb3ZpZGVyIC0+IG1zTWFya2V0ICJSZWFsaXphIGxsYW1hZGFzIEFQSSBhIiAiSlNPTi9IVFRQIgogICAgICAgIHNwYUFkbWluIC0+IG1zRGF0YSAiUmVhbGl6YSBsbGFtYWRhcyBBUEkgYSIgIkpTT04vSFRUUCIKICAgICAgICBzcGFQcm92aWRlciAtPiBtc0RhdGEgIlJlYWxpemEgbGxhbWFkYXMgQVBJIGEiICJKU09OL0hUVFAiCiAgICAgICAgbXNNYXJrZXQgLT4gbXNQcm92aWRlciAiUmVhbGl6YSBsbGFtYWRhcyBBUEkgYSIgIkpTT04vSFRUUCIKICAgICAgICAKICAgICAgICAjUmVsYXRpb25zaGlwcyBtc19hdXRoLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0KICAgICAgICAjLS1hdXRoCiAgICAgICAgc3BhQWRtaW4gLT4gYXV0aENvbnRyb2xsZXIgIlJlYWxpemEgbGxhbWFkYXMgQVBJIGEiICJKU09OL0hUVFAiCiAgICAgICAgc3BhUHJvdmlkZXIgLT4gYXV0aENvbnRyb2xsZXIgIlJlYWxpemEgbGxhbWFkYXMgQVBJIGEiICJKU09OL0hUVFAiCiAgICAgICAgYXV0aENvbnRyb2xsZXIgLT4gYXV0aFNlcnZpY2UgIlV0aWxpemEiCiAgICAgICAgYXV0aFNlcnZpY2UgLT4gc2VjdXJpdHlDb21wb25lbnQgIlV0aWxpemEiCiAgICAgICAgYXV0aFNlcnZpY2UgLT4gYXV0aFVzZXJSZXBvc2l0b3J5ICJVdGlsaXphIgoKICAgICAgICAjLS11c2VyCiAgICAgICAgc3BhQWRtaW4gLT4gYXV0aFVzZXJDb250cm9sbGVyICJSZWFsaXphIGxsYW1hZGFzIEFQSSBhIiAiSlNPTi9IVFRQIgogICAgICAgIHNwYVByb3ZpZGVyIC0+IGF1dGhVc2VyQ29udHJvbGxlciAiUmVhbGl6YSBsbGFtYWRhcyBBUEkgYSIgIkpTT04vSFRUUCIKICAgICAgICBhdXRoVXNlckNvbnRyb2xsZXIgLT4gYXV0aFVzZXJTZXJ2aWNlICJVdGlsaXphIgogICAgICAgIGF1dGhVc2VyU2VydmljZSAtPiBhdXRoVXNlclJlcG9zaXRvcnkgIlV0aWxpemEiCiAgICAgICAgYXV0aFVzZXJSZXBvc2l0b3J5IC0+IG1zQXV0aERCICJSZWFsaXphIGxlY3R1cmEgeSBlc2NyaXR1cmEiICJTcHJpbmcgRGF0YS9KUEEiCgogICAgICAgICMtLXJlc3RvcmVwYXNzCiAgICAgICAgc3BhQWRtaW4gLT4gcmVzdG9yZVBhc3NDb250cm9sbGVyICJSZWFsaXphIGxsYW1hZGFzIEFQSSBhIiAiSlNPTi9IVFRQIgogICAgICAgIHNwYVByb3ZpZGVyIC0+IHJlc3RvcmVQYXNzQ29udHJvbGxlciAiUmVhbGl6YSBsbGFtYWRhcyBBUEkgYSIgIkpTT04vSFRUUCIKICAgICAgICByZXN0b3JlUGFzc0NvbnRyb2xsZXIgLT4gcmVzdG9yZVBhc3NTZXJ2aWNlICJVdGlsaXphIgogICAgICAgIHJlc3RvcmVQYXNzU2VydmljZSAtPiByZXN0b3JlUGFzc1JlcG9zaXRvcnkgIlV0aWxpemEiCiAgICAgICAgcmVzdG9yZVBhc3NSZXBvc2l0b3J5IC0+IG1zQXV0aERCICJSZWFsaXphIGxlY3R1cmEgeSBlc2NyaXR1cmEiICJTcHJpbmcgRGF0YS9KUEEiCgogICAgICAgICAjLS1yZXN0b3JlcGFzcwogICAgICAgIHNwYUFkbWluIC0+ICBhdXRoQ29kZUNvbnRyb2xsZXIgIlJlYWxpemEgbGxhbWFkYXMgQVBJIGEiICJKU09OL0hUVFAiCiAgICAgICAgc3BhUHJvdmlkZXIgLT4gYXV0aENvZGVDb250cm9sbGVyICJSZWFsaXphIGxsYW1hZGFzIEFQSSBhIiAiSlNPTi9IVFRQIgogICAgICAgIGF1dGhDb2RlQ29udHJvbGxlciAtPiBhdXRoQ29kZVNlcnZpY2UgIlV0aWxpemEiCiAgICAgICAgYXV0aENvZGVTZXJ2aWNlIC0+IGF1dGhDb2RlUmVwb3NpdG9yeSAiVXRpbGl6YSIKICAgICAgICBhdXRoQ29kZVJlcG9zaXRvcnkgLT4gbXNBdXRoREIgIlJlYWxpemEgbGVjdHVyYSB5IGVzY3JpdHVyYSIgIlNwcmluZyBEYXRhL0pQQSIKCiAgICAgICAgIy0tZW1haXMKICAgICAgICByZXN0b3JlUGFzc1NlcnZpY2UgLT4gZW1haWxTZXJ2aWNlICJVdGlsaXphIgogICAgICAgIGF1dGhDb2RlU2VydmljZSAtPiBlbWFpbFNlcnZpY2UgIlV0aWxpemEiCiAgICAgICAgZW1haWxTZXJ2aWNlIC0+IGVtYWlsU3lzdGVtICJFbnbDrWEgY29ycmVvIGVsZWN0csOzbmljbyB1c2FuZG8iIAoKCiAgICAgICAgI1JlbGF0aW9uc2hpcHMgbXNfcHJvdmlkZXItLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLQogICAgICAgICMtLXByb3ZpZGVyCiAgICAgICAgbXNNYXJrZXQgLT4gcHJvdmlkZXJDb250cm9sbGVyICJSZWFsaXphIGxsYW1hZGFzIEFQSSBhIiAiSlNPTi9IVFRQIgogICAgICAgIHByb3ZpZGVyQ29udHJvbGxlciAtPiBwcm92aWRlclNlcnZpY2UgIlV0aWxpemEiCiAgICAgICAgcHJvdmlkZXJTZXJ2aWNlIC0+IHByb3ZpZGVyUmVwb3NpdG9yeSAiVXRpbGl6YSIKICAgICAgICBwcm92aWRlclNlcnZpY2UgLT4gcHJvdmlkZXJVc2VyUmVwb3NpdG9yeSAiVXRpbGl6YSIKICAgICAgICBwcm92aWRlclNlcnZpY2UgLT4gcHJvdmlkZXJUeXBlRmlsZXNSZXBvc2l0b3J5ICJVdGlsaXphIgogICAgICAgIHByb3ZpZGVyUmVwb3NpdG9yeSAtPiBtc1Byb3ZpZGVyREIgIlJlYWxpemEgbGVjdHVyYSB5IGVzY3JpdHVyYSIgIlNwcmluZyBEYXRhL0pQQSIKICAgICAgICBwcm92aWRlclR5cGVGaWxlc1JlcG9zaXRvcnkgLT4gbXNQcm92aWRlckRCICJSZWFsaXphIGxlY3R1cmEgeSBlc2NyaXR1cmEiICJTcHJpbmcgRGF0YS9KUEEiCiAgICAgICAgcHJvdmlkZXJVc2VyUmVwb3NpdG9yeSAtPiBtc1Byb3ZpZGVyREIgIlJlYWxpemEgbGVjdHVyYSB5IGVzY3JpdHVyYSIgIlNwcmluZyBEYXRhL0pQQSIKCiAgICAgICAgIy0tcHJvdmlkZXIgdHlwZQogICAgICAgIG1zTWFya2V0IC0+IHByb3ZpZGVyVHlwZUNvbnRyb2xsZXIgIlJlYWxpemEgbGxhbWFkYXMgQVBJIGEiICJKU09OL0hUVFAiCiAgICAgICAgcHJvdmlkZXJUeXBlQ29udHJvbGxlciAtPiBwcm92aWRlclR5cGVTZXJ2aWNlICJVdGlsaXphIgogICAgICAgIHByb3ZpZGVyVHlwZVNlcnZpY2UgLT4gcHJvdmlkZXJUeXBlUmVwb3NpdG9yeSAiVXRpbGl6YSIKICAgICAgICBwcm92aWRlclR5cGVTZXJ2aWNlIC0+IHByb3ZpZGVyVHlwZUZpbGVzUmVwb3NpdG9yeSAiVXRpbGl6YSIKICAgICAgICBwcm92aWRlclR5cGVSZXBvc2l0b3J5IC0+IG1zUHJvdmlkZXJEQiAiUmVhbGl6YSBsZWN0dXJhIHkgZXNjcml0dXJhIiAiU3ByaW5nIERhdGEvSlBBIgoKICAgICAgICAjUmVsYXRpb25zaGlwcyBtc19kYXRhLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tCiAgICAgICAgIy0tYXp1cmVmaWxlCiAgICAgICAgc3BhQWRtaW4gLT4gIGF6dXJlRmlsZUNvbnRyb2xsZXIgIlJlYWxpemEgbGxhbWFkYXMgQVBJIGEiICJKU09OL0hUVFAiCiAgICAgICAgc3BhUHJvdmlkZXIgLT4gYXp1cmVGaWxlQ29udHJvbGxlciAiUmVhbGl6YSBsbGFtYWRhcyBBUEkgYSIgIkpTT04vSFRUUCIKICAgICAgICBhenVyZUZpbGVDb250cm9sbGVyIC0+IGF6dXJlRmlsZVNlcnZpY2UgIlV0aWxpemEiCiAgICAgICAgYXp1cmVGaWxlU2VydmljZSAtPiBhenVyZUZpbGVSZXBvc2l0b3J5ICJVdGlsaXphIgogICAgICAgIGF6dXJlRmlsZVJlcG9zaXRvcnkgLT4gbXNEYXRhREIgIlJlYWxpemEgbGVjdHVyYSB5IGVzY3JpdHVyYSIgIlNwcmluZyBEYXRhL0pQQSIKCiAgICAgICAgIy0tY2l0eQogICAgICAgIHNwYUFkbWluIC0+ICBjaXR5Q29udHJvbGxlciAiUmVhbGl6YSBsbGFtYWRhcyBBUEkgYSIgIkpTT04vSFRUUCIKICAgICAgICBzcGFQcm92aWRlciAtPiBjaXR5Q29udHJvbGxlciAiUmVhbGl6YSBsbGFtYWRhcyBBUEkgYSIgIkpTT04vSFRUUCIKICAgICAgICBjaXR5Q29udHJvbGxlciAtPiBjaXR5U2VydmljZSAiVXRpbGl6YSIKICAgICAgICBjaXR5U2VydmljZSAtPiBjaXR5UmVwb3NpdG9yeSAiVXRpbGl6YSIKICAgICAgICBjaXR5UmVwb3NpdG9yeSAtPiBtc0RhdGFEQiAiUmVhbGl6YSBsZWN0dXJhIHkgZXNjcml0dXJhIiAiU3ByaW5nIERhdGEvSlBBIgoKICAgICAgICAjLS1kZXBhcnRtZW50CiAgICAgICAgc3BhQWRtaW4gLT4gIGRlcGFydG1lbnRDb250cm9sbGVyICJSZWFsaXphIGxsYW1hZGFzIEFQSSBhIiAiSlNPTi9IVFRQIgogICAgICAgIHNwYVByb3ZpZGVyIC0+IGRlcGFydG1lbnRDb250cm9sbGVyICJSZWFsaXphIGxsYW1hZGFzIEFQSSBhIiAiSlNPTi9IVFRQIgogICAgICAgIGRlcGFydG1lbnRDb250cm9sbGVyIC0+IGRlcGFydG1lbnRTZXJ2aWNlICJVdGlsaXphIgogICAgICAgIGRlcGFydG1lbnRTZXJ2aWNlIC0+IGRlcGFydG1lbnRSZXBvc2l0b3J5ICJVdGlsaXphIgogICAgICAgIGRlcGFydG1lbnRSZXBvc2l0b3J5IC0+IG1zRGF0YURCICJSZWFsaXphIGxlY3R1cmEgeSBlc2NyaXR1cmEiICJTcHJpbmcgRGF0YS9KUEEiCgogICAgICAgICMtLXBhcmFtc2ZpbGVzCiAgICAgICAgc3BhQWRtaW4gLT4gIHBhcmFtRmlsZXNDb250cm9sbGVyICJSZWFsaXphIGxsYW1hZGFzIEFQSSBhIiAiSlNPTi9IVFRQIgogICAgICAgIHNwYVByb3ZpZGVyIC0+IHBhcmFtRmlsZXNDb250cm9sbGVyICJSZWFsaXphIGxsYW1hZGFzIEFQSSBhIiAiSlNPTi9IVFRQIgogICAgICAgIHBhcmFtRmlsZXNDb250cm9sbGVyIC0+IHBhcmFtRmlsZXNTZXJ2aWNlICJVdGlsaXphIgogICAgICAgIHBhcmFtRmlsZXNTZXJ2aWNlIC0+IHBhcmFtRmlsZXNSZXBvc2l0b3J5ICJVdGlsaXphIgogICAgICAgIHBhcmFtRmlsZXNSZXBvc2l0b3J5IC0+IG1zRGF0YURCICJSZWFsaXphIGxlY3R1cmEgeSBlc2NyaXR1cmEiICJTcHJpbmcgRGF0YS9KUEEiCgogICAgICAgICMtLXByb2R1Y3QgQ2F0ZWdvcnkKICAgICAgICBzcGFBZG1pbiAtPiAgcHJvZHVjdENhdGVnb3J5Q29udHJvbGxlciAiUmVhbGl6YSBsbGFtYWRhcyBBUEkgYSIgIkpTT04vSFRUUCIKICAgICAgICBzcGFQcm92aWRlciAtPiBwcm9kdWN0Q2F0ZWdvcnlDb250cm9sbGVyICJSZWFsaXphIGxsYW1hZGFzIEFQSSBhIiAiSlNPTi9IVFRQIgogICAgICAgIHByb2R1Y3RDYXRlZ29yeUNvbnRyb2xsZXIgLT4gcHJvZHVjdENhdGVnb3J5U2VydmljZSAiVXRpbGl6YSIKICAgICAgICBwcm9kdWN0Q2F0ZWdvcnlTZXJ2aWNlIC0+IHByb2R1Y3RDYXRlZ29yeVJlcG9zaXRvcnkgIlV0aWxpemEiCiAgICAgICAgcHJvZHVjdENhdGVnb3J5UmVwb3NpdG9yeSAtPiBtc0RhdGFEQiAiUmVhbGl6YSBsZWN0dXJhIHkgZXNjcml0dXJhIiAiU3ByaW5nIERhdGEvSlBBIgoKICAgICAgICAjLS11bml0CiAgICAgICAgc3BhQWRtaW4gLT4gIHVuaXRDb250cm9sbGVyICJSZWFsaXphIGxsYW1hZGFzIEFQSSBhIiAiSlNPTi9IVFRQIgogICAgICAgIHNwYVByb3ZpZGVyIC0+IHVuaXRDb250cm9sbGVyICJSZWFsaXphIGxsYW1hZGFzIEFQSSBhIiAiSlNPTi9IVFRQIgogICAgICAgIHVuaXRDb250cm9sbGVyIC0+IHVuaXRTZXJ2aWNlICJVdGlsaXphIgogICAgICAgIHVuaXRTZXJ2aWNlIC0+IHVuaXRSZXBvc2l0b3J5ICJVdGlsaXphIgogICAgICAgIHVuaXRSZXBvc2l0b3J5IC0+IG1zRGF0YURCICJSZWFsaXphIGxlY3R1cmEgeSBlc2NyaXR1cmEiICJTcHJpbmcgRGF0YS9KUEEiCgogICAgICAgICNSZWxhdGlvbnNoaXBzIG1zX21hcmtldC0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLQogICAgICAgICMtLWNhdGFsb2cKICAgICAgICBzcGFBZG1pbiAtPiAgY2F0YWxvZ0NvbnRyb2xsZXIgIlJlYWxpemEgbGxhbWFkYXMgQVBJIGEiICJKU09OL0hUVFAiCiAgICAgICAgc3BhUHJvdmlkZXIgLT4gY2F0YWxvZ0NvbnRyb2xsZXIgIlJlYWxpemEgbGxhbWFkYXMgQVBJIGEiICJKU09OL0hUVFAiCiAgICAgICAgY2F0YWxvZ0NvbnRyb2xsZXIgLT4gY2F0YWxvZ1NlcnZpY2UgIlV0aWxpemEiCiAgICAgICAgY2F0YWxvZ1NlcnZpY2UgLT4gY2F0YWxvZ1JlcG9zaXRvcnkgIlV0aWxpemEiCiAgICAgICAgY2F0YWxvZ1NlcnZpY2UgLT4gcHJvZHVjdFJlcG9zaXRvcnkgIlV0aWxpemEiCiAgICAgICAgY2F0YWxvZ1JlcG9zaXRvcnkgLT4gbXNNYXJrZXREQiAiUmVhbGl6YSBsZWN0dXJhIHkgZXNjcml0dXJhIiAiU3ByaW5nIERhdGEvSlBBIgoKICAgICAgICAjLS1wYXJhbXN0YXRlCiAgICAgICAgc3BhQWRtaW4gLT4gIHBhcmFtU3RhdGVDb250cm9sbGVyICJSZWFsaXphIGxsYW1hZGFzIEFQSSBhIiAiSlNPTi9IVFRQIgogICAgICAgIHNwYVByb3ZpZGVyIC0+IHBhcmFtU3RhdGVDb250cm9sbGVyICJSZWFsaXphIGxsYW1hZGFzIEFQSSBhIiAiSlNPTi9IVFRQIgogICAgICAgIHBhcmFtU3RhdGVDb250cm9sbGVyIC0+IHBhcmFtU3RhdGVTZXJ2aWNlICJVdGlsaXphIgogICAgICAgIHBhcmFtU3RhdGVTZXJ2aWNlIC0+IHBhcmFtU3RhdGVSZXBvc2l0b3J5ICJVdGlsaXphIgogICAgICAgIHBhcmFtU3RhdGVSZXBvc2l0b3J5IC0+IG1zTWFya2V0REIgIlJlYWxpemEgbGVjdHVyYSB5IGVzY3JpdHVyYSIgIlNwcmluZyBEYXRhL0pQQSIKCiAgICAgICAgIy0tcHJvdmlkZXJyZWdpc3RlcgogICAgICAgIHNwYUFkbWluIC0+IHByb3ZpZGVyUmVnaXN0ZXJDb250cm9sbGVyICJSZWFsaXphIGxsYW1hZGFzIEFQSSBhIiAiSlNPTi9IVFRQIgogICAgICAgIHNwYVByb3ZpZGVyIC0+IHByb3ZpZGVyUmVnaXN0ZXJDb250cm9sbGVyICJSZWFsaXphIGxsYW1hZGFzIEFQSSBhIiAiSlNPTi9IVFRQIgogICAgICAgIHByb3ZpZGVyUmVnaXN0ZXJDb250cm9sbGVyIC0+IHByb3ZpZGVyUmVnaXN0ZXJTZXJ2aWNlICJVdGlsaXphIgogICAgICAgIHByb3ZpZGVyUmVnaXN0ZXJTZXJ2aWNlIC0+IHByb3ZpZGVyUmVnaXN0ZXJSZXBvc2l0b3J5ICJVdGlsaXphIgogICAgICAgIHByb3ZpZGVyUmVnaXN0ZXJTZXJ2aWNlIC0+IHByb3ZpZGVyRmlsZVN0YXR1c1JlcG9zaXRvcnkgIlV0aWxpemEiCiAgICAgICAgcHJvdmlkZXJSZWdpc3RlclNlcnZpY2UgLT4gcGFyYW1TdGF0ZVJlcG9zaXRvcnkgIlV0aWxpemEiCiAgICAgICAgcHJvdmlkZXJSZWdpc3RlclNlcnZpY2UgLT4gcHJvdmlkZXJDbGllbnQgIlV0aWxpemEiCiAgICAgICAgcHJvdmlkZXJDbGllbnQgLT4gbXNQcm92aWRlciAiUmVhbGl6YSBsbGFtYWRhcyBBUEkgYSIgIkpTT04vSFRUUCIKICAgICAgICBwcm92aWRlclJlZ2lzdGVyUmVwb3NpdG9yeSAtPiBtc01hcmtldERCICJSZWFsaXphIGxlY3R1cmEgeSBlc2NyaXR1cmEiICJTcHJpbmcgRGF0YS9KUEEiCiAgICAgICAgcHJvdmlkZXJGaWxlU3RhdHVzUmVwb3NpdG9yeSAtPiBtc01hcmtldERCICJSZWFsaXphIGxlY3R1cmEgeSBlc2NyaXR1cmEiICJTcHJpbmcgRGF0YS9KUEEiCgogICAgfQoKICAgIHZpZXdzIHsKICAgICAgICBzeXN0ZW1Db250ZXh0IHN5c3RlbSB7CiAgICAgICAgICAgIGluY2x1ZGUgKgogICAgICAgICAgICBhdXRvbGF5b3V0IGxyCiAgICAgICAgfQoKICAgICAgICBjb250YWluZXIgc3lzdGVtIHsKICAgICAgICAgICAgaW5jbHVkZSAqCiAgICAgICAgICAgIGF1dG9sYXlvdXQgdGIKICAgICAgICB9CgogICAgICAgIGNvbXBvbmVudCBtc0F1dGggIkNvbXBvbmVudHMiewogICAgICAgICAgICBpbmNsdWRlICoKICAgICAgICAgICAgYXV0b2xheW91dCB0YgogICAgICAgICAgICBkZXNjcmlwdGlvbiAiRWwgZGlhZ3JhbWEgZGUgY29tcG9uZW50ZXMgbXNBdXRoIGRlIGxhIGFwbGljYWNpw7NuIEFQSS4iCiAgICAgICAgfQoKICAgICAgICBjb21wb25lbnQgbXNQcm92aWRlciB7CiAgICAgICAgICAgIGluY2x1ZGUgKgogICAgICAgICAgICBhdXRvbGF5b3V0IHRiCiAgICAgICAgICAgIGRlc2NyaXB0aW9uICJFbCBkaWFncmFtYSBkZSBjb21wb25lbnRlcyBtc1Byb3ZpZGVyIGRlIGxhIGFwbGljYWNpw7NuIEFQSS4iCiAgICAgICAgfQoKICAgICAgICAgY29tcG9uZW50IG1zRGF0YSB7CiAgICAgICAgICAgIGluY2x1ZGUgKgogICAgICAgICAgICBhdXRvbGF5b3V0IHRiCiAgICAgICAgICAgIGRlc2NyaXB0aW9uICJFbCBkaWFncmFtYSBkZSBjb21wb25lbnRlcyBtc0RhdGEgZGUgbGEgYXBsaWNhY2nDs24gQVBJLiIKICAgICAgICB9CgogICAgICAgICBjb21wb25lbnQgbXNNYXJrZXQgewogICAgICAgICAgICBpbmNsdWRlICoKICAgICAgICAgICAgYXV0b2xheW91dCB0YgogICAgICAgICAgICBkZXNjcmlwdGlvbiAiRWwgZGlhZ3JhbWEgZGUgY29tcG9uZW50ZXMgbXNNYXJrZXQgZGUgbGEgYXBsaWNhY2nDs24gQVBJLiIKICAgICAgICB9CiAgICAgICAgdGhlbWUgZGVmYXVsdAoKICAgICAgICBzdHlsZXMgewogICAgICAgICAgICBlbGVtZW50ICJHcm91cCJ7CiAgICAgICAgICAgICAgICBjb2xvciAjMDA5QjEwCiAgICAgICAgICAgIH0KICAgICAgICAgICAgZWxlbWVudCAiU29mdHdhcmUgU3lzdGVtIiB7CiAgICAgICAgICAgICAgICBiYWNrZ3JvdW5kICMxMTY4YmQKICAgICAgICAgICAgICAgIGNvbG9yICNmZmZmZmYKICAgICAgICAgICAgfQogICAgICAgICAgICBlbGVtZW50ICJFeGlzdGluZyBTeXN0ZW0iIHsKICAgICAgICAgICAgICAgIGJhY2tncm91bmQgIzk5OTk5OQogICAgICAgICAgICAgICAgY29sb3IgI2ZmZmZmZgogICAgICAgICAgICB9CiAgICAgICAgICAgIGVsZW1lbnQgIkNvbnRhaW5lciIgewogICAgICAgICAgICAgICAgYmFja2dyb3VuZCAjNDM4ZGQ1CiAgICAgICAgICAgICAgICBjb2xvciAjZmZmZmZmCiAgICAgICAgICAgIH0KICAgICAgICAgICAgZWxlbWVudCAiV2ViIEJyb3dzZXIiIHsKICAgICAgICAgICAgICAgIHNoYXBlIFdlYkJyb3dzZXIKICAgICAgICAgICAgfQogICAgICAgICAgICBlbGVtZW50ICJEYXRhYmFzZSIgewogICAgICAgICAgICAgICAgc2hhcGUgQ3lsaW5kZXIKICAgICAgICAgICAgfQogICAgICAgIH0KICAgIH0KfQo="
+  },
+  "configuration" : { },
+  "model" : {
+    "people" : [ {
+      "id" : "1",
+      "tags" : "Element,Person",
+      "properties" : {
+        "structurizr.dsl.identifier" : "admin"
+      },
+      "name" : "Administrador",
+      "description" : "Usuario de tipo administrador",
+      "relationships" : [ {
+        "id" : "68",
+        "sourceId" : "1",
+        "destinationId" : "3",
+        "description" : "Utiliza",
+        "linkedRelationshipId" : "67"
+      }, {
+        "id" : "67",
+        "tags" : "Relationship",
+        "properties" : {
+          "structurizr.dsl.identifier" : "c989f83d-2d77-47e7-a37c-cb10edf2c568"
+        },
+        "sourceId" : "1",
+        "destinationId" : "4",
+        "description" : "Utiliza"
+      } ],
+      "location" : "Unspecified"
+    }, {
+      "id" : "2",
+      "tags" : "Element,Person",
+      "properties" : {
+        "structurizr.dsl.identifier" : "provider"
+      },
+      "name" : "Proveedor",
+      "description" : "Usuario de tipo proveedor",
+      "relationships" : [ {
+        "id" : "69",
+        "tags" : "Relationship",
+        "properties" : {
+          "structurizr.dsl.identifier" : "f9162ff2-e0a4-45c1-b1be-245e7bc13af7"
+        },
+        "sourceId" : "2",
+        "destinationId" : "5",
+        "description" : "Utiliza"
+      }, {
+        "id" : "70",
+        "sourceId" : "2",
+        "destinationId" : "3",
+        "description" : "Utiliza",
+        "linkedRelationshipId" : "69"
+      } ],
+      "location" : "Unspecified"
+    } ],
+    "softwareSystems" : [ {
+      "id" : "3",
+      "tags" : "Element,Software System",
+      "properties" : {
+        "structurizr.dsl.identifier" : "system"
+      },
+      "name" : "Mi Mercado - 2023",
+      "description" : "Software para la administración ofertas empresariales",
+      "relationships" : [ {
+        "id" : "66",
+        "tags" : "Relationship",
+        "properties" : {
+          "structurizr.dsl.identifier" : "b09c41a1-0e57-412c-a417-e9822e7e2b1c"
+        },
+        "sourceId" : "3",
+        "destinationId" : "65",
+        "description" : "Envía correo electrónico usando"
+      } ],
+      "location" : "Unspecified",
+      "containers" : [ {
+        "id" : "20",
+        "tags" : "Element,Container",
+        "properties" : {
+          "structurizr.dsl.identifier" : "msprovider"
+        },
+        "name" : "API ms_proveedor",
+        "description" : "Contiene la lógica de proveedores",
+        "relationships" : [ {
+          "id" : "72",
+          "tags" : "Relationship",
+          "properties" : {
+            "structurizr.dsl.identifier" : "c5b6f0e1-2b32-4dbe-b37f-e6bbe20b080c"
+          },
+          "sourceId" : "20",
+          "destinationId" : "62",
+          "description" : "Realiza  lectura y escritura",
+          "technology" : "Spring Data/JPA"
+        } ],
+        "group" : "Microservicios - Back-end",
+        "technology" : "Java - SpringBoot API",
+        "components" : [ {
+          "id" : "24",
+          "tags" : "Element,Component",
+          "properties" : {
+            "structurizr.dsl.identifier" : "provideruserrepository"
+          },
+          "name" : "ProviderUserRepository",
+          "description" : "Interfaz operaciones de acceso a datos",
+          "relationships" : [ {
+            "id" : "113",
+            "tags" : "Relationship",
+            "properties" : {
+              "structurizr.dsl.identifier" : "92b99c65-dd78-4dca-9457-050190e1aea8"
+            },
+            "sourceId" : "24",
+            "destinationId" : "62",
+            "description" : "Realiza lectura y escritura",
+            "technology" : "Spring Data/JPA"
+          } ],
+          "group" : "provider",
+          "technology" : "Spring MVC - Repository",
+          "documentation" : { }
+        }, {
+          "id" : "25",
+          "tags" : "Element,Component",
+          "properties" : {
+            "structurizr.dsl.identifier" : "providertypecontroller"
+          },
+          "name" : "ProviderTypeController",
+          "description" : "Permite a los usuarios la gestion de tipo de proveedor.",
+          "relationships" : [ {
+            "id" : "115",
+            "tags" : "Relationship",
+            "properties" : {
+              "structurizr.dsl.identifier" : "d3b86f08-a0e0-40b4-8e90-6c3a657cf617"
+            },
+            "sourceId" : "25",
+            "destinationId" : "26",
+            "description" : "Utiliza"
+          } ],
+          "group" : "providertype",
+          "technology" : "Spring MVC - Rest Controller",
+          "documentation" : { }
+        }, {
+          "id" : "22",
+          "tags" : "Element,Component",
+          "properties" : {
+            "structurizr.dsl.identifier" : "providerservice"
+          },
+          "name" : "ProviderService",
+          "description" : "Contiene la logica para la administracion de proveedor",
+          "relationships" : [ {
+            "id" : "110",
+            "tags" : "Relationship",
+            "properties" : {
+              "structurizr.dsl.identifier" : "cf63e6ce-1601-41f5-856d-3e3557c834d4"
+            },
+            "sourceId" : "22",
+            "destinationId" : "28",
+            "description" : "Utiliza"
+          }, {
+            "id" : "109",
+            "tags" : "Relationship",
+            "properties" : {
+              "structurizr.dsl.identifier" : "f1b1a14f-1c69-4b8d-ac96-212f6e9f5638"
+            },
+            "sourceId" : "22",
+            "destinationId" : "24",
+            "description" : "Utiliza"
+          }, {
+            "id" : "108",
+            "tags" : "Relationship",
+            "properties" : {
+              "structurizr.dsl.identifier" : "496d8d39-3f75-4eb0-af3d-8f58306212c3"
+            },
+            "sourceId" : "22",
+            "destinationId" : "23",
+            "description" : "Utiliza"
+          } ],
+          "group" : "provider",
+          "technology" : "Spring MVC - Service",
+          "documentation" : { }
+        }, {
+          "id" : "23",
+          "tags" : "Element,Component",
+          "properties" : {
+            "structurizr.dsl.identifier" : "providerrepository"
+          },
+          "name" : "ProviderRepository",
+          "description" : "Interfaz operaciones de acceso a datos",
+          "relationships" : [ {
+            "id" : "111",
+            "tags" : "Relationship",
+            "properties" : {
+              "structurizr.dsl.identifier" : "bc15e278-1050-47c6-8e71-17dcb23ee178"
+            },
+            "sourceId" : "23",
+            "destinationId" : "62",
+            "description" : "Realiza lectura y escritura",
+            "technology" : "Spring Data/JPA"
+          } ],
+          "group" : "provider",
+          "technology" : "Spring MVC - Repository",
+          "documentation" : { }
+        }, {
+          "id" : "28",
+          "tags" : "Element,Component",
+          "properties" : {
+            "structurizr.dsl.identifier" : "providertypefilesrepository"
+          },
+          "name" : "ProviderTypeFilesRepository",
+          "description" : "Interfaz operaciones de acceso a datos",
+          "relationships" : [ {
+            "id" : "112",
+            "tags" : "Relationship",
+            "properties" : {
+              "structurizr.dsl.identifier" : "eecad317-8034-45c9-8cb1-722cff42c177"
+            },
+            "sourceId" : "28",
+            "destinationId" : "62",
+            "description" : "Realiza lectura y escritura",
+            "technology" : "Spring Data/JPA"
+          } ],
+          "group" : "providertype",
+          "technology" : "Spring MVC - Repository",
+          "documentation" : { }
+        }, {
+          "id" : "26",
+          "tags" : "Element,Component",
+          "properties" : {
+            "structurizr.dsl.identifier" : "providertypeservice"
+          },
+          "name" : "ProviderTypeService",
+          "description" : "Contiene la logica para la administracion de tipo de proveedor",
+          "relationships" : [ {
+            "id" : "116",
+            "tags" : "Relationship",
+            "properties" : {
+              "structurizr.dsl.identifier" : "88d103cb-90c0-4b42-a808-719b49fc9474"
+            },
+            "sourceId" : "26",
+            "destinationId" : "27",
+            "description" : "Utiliza"
+          }, {
+            "id" : "117",
+            "tags" : "Relationship",
+            "properties" : {
+              "structurizr.dsl.identifier" : "16868cf1-5d6d-49e4-93dd-731e7b0881e6"
+            },
+            "sourceId" : "26",
+            "destinationId" : "28",
+            "description" : "Utiliza"
+          } ],
+          "group" : "providertype",
+          "technology" : "Spring MVC - Service",
+          "documentation" : { }
+        }, {
+          "id" : "27",
+          "tags" : "Element,Component",
+          "properties" : {
+            "structurizr.dsl.identifier" : "providertyperepository"
+          },
+          "name" : "ProviderTypeRepository",
+          "description" : "Interfaz operaciones de acceso a datos",
+          "relationships" : [ {
+            "id" : "118",
+            "tags" : "Relationship",
+            "properties" : {
+              "structurizr.dsl.identifier" : "a530d01b-270a-4240-a40a-a774d2ae7d42"
+            },
+            "sourceId" : "27",
+            "destinationId" : "62",
+            "description" : "Realiza lectura y escritura",
+            "technology" : "Spring Data/JPA"
+          } ],
+          "group" : "providertype",
+          "technology" : "Spring MVC - Repository",
+          "documentation" : { }
+        }, {
+          "id" : "21",
+          "tags" : "Element,Component",
+          "properties" : {
+            "structurizr.dsl.identifier" : "providercontroller"
+          },
+          "name" : "ProviderController",
+          "description" : "Permite a los usuarios la gestion de datos de proveedor.",
+          "relationships" : [ {
+            "id" : "107",
+            "tags" : "Relationship",
+            "properties" : {
+              "structurizr.dsl.identifier" : "f7373602-af5a-409e-b4a0-f2246872093a"
+            },
+            "sourceId" : "21",
+            "destinationId" : "22",
+            "description" : "Utiliza"
+          } ],
+          "group" : "provider",
+          "technology" : "Spring MVC - Rest Controller",
+          "documentation" : { }
+        } ],
+        "documentation" : { }
+      }, {
+        "id" : "61",
+        "tags" : "Element,Container,Database",
+        "properties" : {
+          "structurizr.dsl.identifier" : "msauthdb"
+        },
+        "name" : "BD mm_auth",
+        "description" : "Almacena datos de usuarios y credenciales.",
+        "group" : "Microservicios - Back-end",
+        "technology" : "SQL Server",
+        "documentation" : { }
+      }, {
+        "id" : "48",
+        "tags" : "Element,Container",
+        "properties" : {
+          "structurizr.dsl.identifier" : "msmarket"
+        },
+        "name" : "API ms_market",
+        "description" : "Contiene la lógica de mercado",
+        "relationships" : [ {
+          "id" : "114",
+          "tags" : "Relationship",
+          "properties" : {
+            "structurizr.dsl.identifier" : "f713bc27-0804-4859-ac11-c9894c3692b1"
+          },
+          "sourceId" : "48",
+          "destinationId" : "25",
+          "description" : "Realiza llamadas API a",
+          "technology" : "JSON/HTTP"
+        }, {
+          "id" : "81",
+          "tags" : "Relationship",
+          "properties" : {
+            "structurizr.dsl.identifier" : "b37b5ea8-5d59-430b-99ac-74c2dd7b8a86"
+          },
+          "sourceId" : "48",
+          "destinationId" : "20",
+          "description" : "Realiza llamadas API a",
+          "technology" : "JSON/HTTP"
+        }, {
+          "id" : "106",
+          "tags" : "Relationship",
+          "properties" : {
+            "structurizr.dsl.identifier" : "fd697ab9-beee-4859-b5df-f52049b3867a"
+          },
+          "sourceId" : "48",
+          "destinationId" : "21",
+          "description" : "Realiza llamadas API a",
+          "technology" : "JSON/HTTP"
+        }, {
+          "id" : "74",
+          "tags" : "Relationship",
+          "properties" : {
+            "structurizr.dsl.identifier" : "ee666ecf-f16b-415a-b64f-ae1cd84af03a"
+          },
+          "sourceId" : "48",
+          "destinationId" : "64",
+          "description" : "Realiza lectura y escritura",
+          "technology" : "Spring Data/JPA"
+        } ],
+        "group" : "Microservicios - Back-end",
+        "technology" : "Java - SpringBoot API",
+        "components" : [ {
+          "id" : "55",
+          "tags" : "Element,Component",
+          "properties" : {
+            "structurizr.dsl.identifier" : "paramstaterepository"
+          },
+          "name" : "ParamStateRepository",
+          "description" : "Interfaz operaciones de acceso a datos",
+          "relationships" : [ {
+            "id" : "159",
+            "tags" : "Relationship",
+            "properties" : {
+              "structurizr.dsl.identifier" : "c34b036d-ae4f-43ab-b54d-6632a59d9f0a"
+            },
+            "sourceId" : "55",
+            "destinationId" : "64",
+            "description" : "Realiza lectura y escritura",
+            "technology" : "Spring Data/JPA"
+          } ],
+          "group" : "paramstate",
+          "technology" : "Spring MVC - Repository",
+          "documentation" : { }
+        }, {
+          "id" : "59",
+          "tags" : "Element,Component",
+          "properties" : {
+            "structurizr.dsl.identifier" : "providerfilestatusrepository"
+          },
+          "name" : "ProviderFileStatusRepository",
+          "description" : "Interfaz operaciones de acceso a datos",
+          "relationships" : [ {
+            "id" : "169",
+            "tags" : "Relationship",
+            "properties" : {
+              "structurizr.dsl.identifier" : "7f010819-5810-4387-bf90-a9d88c73c682"
+            },
+            "sourceId" : "59",
+            "destinationId" : "64",
+            "description" : "Realiza lectura y escritura",
+            "technology" : "Spring Data/JPA"
+          } ],
+          "group" : "providerregister",
+          "technology" : "Spring MVC - Repository",
+          "documentation" : { }
+        }, {
+          "id" : "57",
+          "tags" : "Element,Component",
+          "properties" : {
+            "structurizr.dsl.identifier" : "providerregisterservice"
+          },
+          "name" : "ProviderRegisterService",
+          "description" : "Contiene la logica del registro de informacion de proveedor",
+          "relationships" : [ {
+            "id" : "164",
+            "tags" : "Relationship",
+            "properties" : {
+              "structurizr.dsl.identifier" : "7a542e00-cb7a-4ef1-b77c-064f1844a890"
+            },
+            "sourceId" : "57",
+            "destinationId" : "59",
+            "description" : "Utiliza"
+          }, {
+            "id" : "165",
+            "tags" : "Relationship",
+            "properties" : {
+              "structurizr.dsl.identifier" : "ce1e5145-4a03-4b09-9703-12a5ead69076"
+            },
+            "sourceId" : "57",
+            "destinationId" : "55",
+            "description" : "Utiliza"
+          }, {
+            "id" : "166",
+            "tags" : "Relationship",
+            "properties" : {
+              "structurizr.dsl.identifier" : "02a5c599-9c7f-4619-823d-7b1d3bf4fda1"
+            },
+            "sourceId" : "57",
+            "destinationId" : "60",
+            "description" : "Utiliza"
+          }, {
+            "id" : "163",
+            "tags" : "Relationship",
+            "properties" : {
+              "structurizr.dsl.identifier" : "283ab3a6-30b6-4eb4-8fe7-fa0bcdd53cc2"
+            },
+            "sourceId" : "57",
+            "destinationId" : "58",
+            "description" : "Utiliza"
+          } ],
+          "group" : "providerregister",
+          "technology" : "Spring MVC - Service",
+          "documentation" : { }
+        }, {
+          "id" : "54",
+          "tags" : "Element,Component",
+          "properties" : {
+            "structurizr.dsl.identifier" : "paramstateservice"
+          },
+          "name" : "ParamStateService",
+          "description" : "Contiene la logica para la administracion de parametros de estado",
+          "relationships" : [ {
+            "id" : "158",
+            "tags" : "Relationship",
+            "properties" : {
+              "structurizr.dsl.identifier" : "11abf026-2a89-4968-ba02-efa4a6372a22"
+            },
+            "sourceId" : "54",
+            "destinationId" : "55",
+            "description" : "Utiliza"
+          } ],
+          "group" : "paramstate",
+          "technology" : "Spring MVC - Service",
+          "documentation" : { }
+        }, {
+          "id" : "52",
+          "tags" : "Element,Component",
+          "properties" : {
+            "structurizr.dsl.identifier" : "productrepository"
+          },
+          "name" : "ProductRepository",
+          "description" : "Interfaz operaciones de acceso a datos",
+          "group" : "catalog",
+          "technology" : "Spring MVC - Repository",
+          "documentation" : { }
+        }, {
+          "id" : "53",
+          "tags" : "Element,Component",
+          "properties" : {
+            "structurizr.dsl.identifier" : "paramstatecontroller"
+          },
+          "name" : "ParamStateController",
+          "description" : "Permite a los usuarios la gestion de parametros de estado",
+          "relationships" : [ {
+            "id" : "157",
+            "tags" : "Relationship",
+            "properties" : {
+              "structurizr.dsl.identifier" : "2ad47a44-6770-4330-b42f-2c976db4facb"
+            },
+            "sourceId" : "53",
+            "destinationId" : "54",
+            "description" : "Utiliza"
+          } ],
+          "group" : "paramstate",
+          "technology" : "Spring MVC - Rest Controller",
+          "documentation" : { }
+        }, {
+          "id" : "51",
+          "tags" : "Element,Component",
+          "properties" : {
+            "structurizr.dsl.identifier" : "catalogrepository"
+          },
+          "name" : "CatalogRepository",
+          "description" : "Interfaz operaciones de acceso a datos",
+          "relationships" : [ {
+            "id" : "154",
+            "tags" : "Relationship",
+            "properties" : {
+              "structurizr.dsl.identifier" : "03164e5b-fc3e-4ce9-8565-1d947e401590"
+            },
+            "sourceId" : "51",
+            "destinationId" : "64",
+            "description" : "Realiza lectura y escritura",
+            "technology" : "Spring Data/JPA"
+          } ],
+          "group" : "catalog",
+          "technology" : "Spring MVC - Repository",
+          "documentation" : { }
+        }, {
+          "id" : "60",
+          "tags" : "Element,Component",
+          "properties" : {
+            "structurizr.dsl.identifier" : "providerclient"
+          },
+          "name" : "Cliente proveedor API",
+          "description" : "Cliente del API de proveedor ms_provider",
+          "relationships" : [ {
+            "id" : "167",
+            "tags" : "Relationship",
+            "properties" : {
+              "structurizr.dsl.identifier" : "0f33fc6e-c744-46d0-a465-f367089cdb21"
+            },
+            "sourceId" : "60",
+            "destinationId" : "20",
+            "description" : "Realiza llamadas API a",
+            "technology" : "JSON/HTTP"
+          } ],
+          "technology" : "Java WebClient",
+          "documentation" : { }
+        }, {
+          "id" : "58",
+          "tags" : "Element,Component",
+          "properties" : {
+            "structurizr.dsl.identifier" : "providerregisterrepository"
+          },
+          "name" : "ProviderRegisterRepository",
+          "description" : "Interfaz operaciones de acceso a datos",
+          "relationships" : [ {
+            "id" : "168",
+            "tags" : "Relationship",
+            "properties" : {
+              "structurizr.dsl.identifier" : "d2dcbeef-9a0a-409d-8e56-af9b295de426"
+            },
+            "sourceId" : "58",
+            "destinationId" : "64",
+            "description" : "Realiza lectura y escritura",
+            "technology" : "Spring Data/JPA"
+          } ],
+          "group" : "providerregister",
+          "technology" : "Spring MVC - Repository",
+          "documentation" : { }
+        }, {
+          "id" : "49",
+          "tags" : "Element,Component",
+          "properties" : {
+            "structurizr.dsl.identifier" : "catalogcontroller"
+          },
+          "name" : "CatalogController",
+          "description" : "Permite a los usuarios la gestion del catalogo",
+          "relationships" : [ {
+            "id" : "151",
+            "tags" : "Relationship",
+            "properties" : {
+              "structurizr.dsl.identifier" : "23911354-82fe-4f4d-87aa-4e5201a5b429"
+            },
+            "sourceId" : "49",
+            "destinationId" : "50",
+            "description" : "Utiliza"
+          } ],
+          "group" : "catalog",
+          "technology" : "Spring MVC - Rest Controller",
+          "documentation" : { }
+        }, {
+          "id" : "50",
+          "tags" : "Element,Component",
+          "properties" : {
+            "structurizr.dsl.identifier" : "catalogservice"
+          },
+          "name" : "CatalogService",
+          "description" : "Contiene la logica para la administracion de catalogo",
+          "relationships" : [ {
+            "id" : "153",
+            "tags" : "Relationship",
+            "properties" : {
+              "structurizr.dsl.identifier" : "efa072ae-4e63-4941-ba9c-d47ea393d77b"
+            },
+            "sourceId" : "50",
+            "destinationId" : "52",
+            "description" : "Utiliza"
+          }, {
+            "id" : "152",
+            "tags" : "Relationship",
+            "properties" : {
+              "structurizr.dsl.identifier" : "68426020-7fd4-4f9f-9766-98546d8134d0"
+            },
+            "sourceId" : "50",
+            "destinationId" : "51",
+            "description" : "Utiliza"
+          } ],
+          "group" : "catalog",
+          "technology" : "Spring MVC - Service",
+          "documentation" : { }
+        }, {
+          "id" : "56",
+          "tags" : "Element,Component",
+          "properties" : {
+            "structurizr.dsl.identifier" : "providerregistercontroller"
+          },
+          "name" : "ProviderRegisterController",
+          "description" : "Permite a los usuarios el registro de informacion de proveedor",
+          "relationships" : [ {
+            "id" : "162",
+            "tags" : "Relationship",
+            "properties" : {
+              "structurizr.dsl.identifier" : "fd19b2fe-d8af-498d-89fa-2e952caa8123"
+            },
+            "sourceId" : "56",
+            "destinationId" : "57",
+            "description" : "Utiliza"
+          } ],
+          "group" : "providerregister",
+          "technology" : "Spring MVC - Rest Controller",
+          "documentation" : { }
+        } ],
+        "documentation" : { }
+      }, {
+        "id" : "64",
+        "tags" : "Element,Container,Database",
+        "properties" : {
+          "structurizr.dsl.identifier" : "msmarketdb"
+        },
+        "name" : "BD mm_market",
+        "description" : "Almacena datos de mercado.",
+        "group" : "Microservicios - Back-end",
+        "technology" : "SQL Server",
+        "documentation" : { }
+      }, {
+        "id" : "5",
+        "tags" : "Element,Container,Web Browser",
+        "properties" : {
+          "structurizr.dsl.identifier" : "spaprovider"
+        },
+        "name" : "SPA - Proveedor",
+        "description" : "Aplicación web para perfil proveedor",
+        "relationships" : [ {
+          "id" : "120",
+          "tags" : "Relationship",
+          "properties" : {
+            "structurizr.dsl.identifier" : "de002e18-ade6-48d9-989c-87e38beb65a8"
+          },
+          "sourceId" : "5",
+          "destinationId" : "30",
+          "description" : "Realiza llamadas API a",
+          "technology" : "JSON/HTTP"
+        }, {
+          "id" : "140",
+          "tags" : "Relationship",
+          "properties" : {
+            "structurizr.dsl.identifier" : "bee4a264-a134-4596-a63a-e67ea176efac"
+          },
+          "sourceId" : "5",
+          "destinationId" : "42",
+          "description" : "Realiza llamadas API a",
+          "technology" : "JSON/HTTP"
+        }, {
+          "id" : "76",
+          "tags" : "Relationship",
+          "properties" : {
+            "structurizr.dsl.identifier" : "45d54a16-ccf8-4898-8274-a6644c7fe2a8"
+          },
+          "sourceId" : "5",
+          "destinationId" : "6",
+          "description" : "Realiza llamadas API a",
+          "technology" : "JSON/HTTP"
+        }, {
+          "id" : "161",
+          "tags" : "Relationship",
+          "properties" : {
+            "structurizr.dsl.identifier" : "f62e75c3-0872-4136-8e08-ba6c391f8a94"
+          },
+          "sourceId" : "5",
+          "destinationId" : "56",
+          "description" : "Realiza llamadas API a",
+          "technology" : "JSON/HTTP"
+        }, {
+          "id" : "125",
+          "tags" : "Relationship",
+          "properties" : {
+            "structurizr.dsl.identifier" : "950c3076-f25b-4ff8-8bfd-739bbab6fb68"
+          },
+          "sourceId" : "5",
+          "destinationId" : "33",
+          "description" : "Realiza llamadas API a",
+          "technology" : "JSON/HTTP"
+        }, {
+          "id" : "145",
+          "tags" : "Relationship",
+          "properties" : {
+            "structurizr.dsl.identifier" : "999c1d06-906b-4ba2-9517-0911165c7e2f"
+          },
+          "sourceId" : "5",
+          "destinationId" : "45",
+          "description" : "Realiza llamadas API a",
+          "technology" : "JSON/HTTP"
+        }, {
+          "id" : "93",
+          "tags" : "Relationship",
+          "properties" : {
+            "structurizr.dsl.identifier" : "ac2c9312-aa3f-469d-99b5-6b39cf29eb2c"
+          },
+          "sourceId" : "5",
+          "destinationId" : "13",
+          "description" : "Realiza llamadas API a",
+          "technology" : "JSON/HTTP"
+        }, {
+          "id" : "83",
+          "tags" : "Relationship",
+          "properties" : {
+            "structurizr.dsl.identifier" : "4e3ba4ef-2691-4c7e-ad6a-54518475cf38"
+          },
+          "sourceId" : "5",
+          "destinationId" : "7",
+          "description" : "Realiza llamadas API a",
+          "technology" : "JSON/HTTP"
+        }, {
+          "id" : "135",
+          "tags" : "Relationship",
+          "properties" : {
+            "structurizr.dsl.identifier" : "425be23f-422b-4866-a795-78084b029187"
+          },
+          "sourceId" : "5",
+          "destinationId" : "39",
+          "description" : "Realiza llamadas API a",
+          "technology" : "JSON/HTTP"
+        }, {
+          "id" : "88",
+          "tags" : "Relationship",
+          "properties" : {
+            "structurizr.dsl.identifier" : "134760b1-8aca-47f8-af4b-d4d27b597fe0"
+          },
+          "sourceId" : "5",
+          "destinationId" : "10",
+          "description" : "Realiza llamadas API a",
+          "technology" : "JSON/HTTP"
+        }, {
+          "id" : "78",
+          "tags" : "Relationship",
+          "properties" : {
+            "structurizr.dsl.identifier" : "f4949635-7cea-49b3-9d3e-7f29da511023"
+          },
+          "sourceId" : "5",
+          "destinationId" : "48",
+          "description" : "Realiza llamadas API a",
+          "technology" : "JSON/HTTP"
+        }, {
+          "id" : "98",
+          "tags" : "Relationship",
+          "properties" : {
+            "structurizr.dsl.identifier" : "1e40ad76-6986-45cd-af5a-99d4bf9ae898"
+          },
+          "sourceId" : "5",
+          "destinationId" : "16",
+          "description" : "Realiza llamadas API a",
+          "technology" : "JSON/HTTP"
+        }, {
+          "id" : "130",
+          "tags" : "Relationship",
+          "properties" : {
+            "structurizr.dsl.identifier" : "c24b1e6c-efec-4eaf-9cc5-33daceac7f11"
+          },
+          "sourceId" : "5",
+          "destinationId" : "36",
+          "description" : "Realiza llamadas API a",
+          "technology" : "JSON/HTTP"
+        }, {
+          "id" : "156",
+          "tags" : "Relationship",
+          "properties" : {
+            "structurizr.dsl.identifier" : "281cf499-e216-454f-8ac2-6a64ad952eaf"
+          },
+          "sourceId" : "5",
+          "destinationId" : "53",
+          "description" : "Realiza llamadas API a",
+          "technology" : "JSON/HTTP"
+        }, {
+          "id" : "80",
+          "tags" : "Relationship",
+          "properties" : {
+            "structurizr.dsl.identifier" : "5bed5219-b568-431a-99c1-aeaa5bd6d9ca"
+          },
+          "sourceId" : "5",
+          "destinationId" : "29",
+          "description" : "Realiza llamadas API a",
+          "technology" : "JSON/HTTP"
+        }, {
+          "id" : "150",
+          "tags" : "Relationship",
+          "properties" : {
+            "structurizr.dsl.identifier" : "28ddc1b8-06c1-45fe-8011-5b9369b32aa6"
+          },
+          "sourceId" : "5",
+          "destinationId" : "49",
+          "description" : "Realiza llamadas API a",
+          "technology" : "JSON/HTTP"
+        } ],
+        "group" : "Single Page Applications - Front-end",
+        "technology" : "JavaScript - Angular",
+        "documentation" : { }
+      }, {
+        "id" : "6",
+        "tags" : "Element,Container",
+        "properties" : {
+          "structurizr.dsl.identifier" : "msauth"
+        },
+        "name" : "API ms_auth",
+        "description" : "Contiene la logica de usuarios y autenticación.",
+        "relationships" : [ {
+          "id" : "105",
+          "sourceId" : "6",
+          "destinationId" : "65",
+          "description" : "Envía correo electrónico usando",
+          "linkedRelationshipId" : "104"
+        }, {
+          "id" : "71",
+          "tags" : "Relationship",
+          "properties" : {
+            "structurizr.dsl.identifier" : "1fed4f23-a6b3-4880-a4d4-5cf82f874875"
+          },
+          "sourceId" : "6",
+          "destinationId" : "61",
+          "description" : "Realiza lectura y escritura",
+          "technology" : "Spring Data/JPA"
+        } ],
+        "group" : "Microservicios - Back-end",
+        "technology" : "Java - SpringBoot API",
+        "components" : [ {
+          "id" : "8",
+          "tags" : "Element,Component",
+          "properties" : {
+            "structurizr.dsl.identifier" : "authservice"
+          },
+          "name" : "AuthService",
+          "description" : "Contiene la logica de inicio de sesión",
+          "relationships" : [ {
+            "id" : "86",
+            "tags" : "Relationship",
+            "properties" : {
+              "structurizr.dsl.identifier" : "613b9ce3-8379-4f1f-b00a-8dfc4ac5377e"
+            },
+            "sourceId" : "8",
+            "destinationId" : "12",
+            "description" : "Utiliza"
+          }, {
+            "id" : "85",
+            "tags" : "Relationship",
+            "properties" : {
+              "structurizr.dsl.identifier" : "1695a793-e409-4fbb-9510-36ba382fc73c"
+            },
+            "sourceId" : "8",
+            "destinationId" : "9",
+            "description" : "Utiliza"
+          } ],
+          "group" : "auth",
+          "technology" : "Spring MVC - Service",
+          "documentation" : { }
+        }, {
+          "id" : "15",
+          "tags" : "Element,Component",
+          "properties" : {
+            "structurizr.dsl.identifier" : "restorepassrepository"
+          },
+          "name" : "RestorePassRepository",
+          "description" : "Interfaz operaciones de acceso a datos",
+          "relationships" : [ {
+            "id" : "96",
+            "tags" : "Relationship",
+            "properties" : {
+              "structurizr.dsl.identifier" : "a966404c-fa59-4719-985f-3b5e60ff4608"
+            },
+            "sourceId" : "15",
+            "destinationId" : "61",
+            "description" : "Realiza lectura y escritura",
+            "technology" : "Spring Data/JPA"
+          } ],
+          "group" : "restorepass",
+          "technology" : "Spring MVC - Repository",
+          "documentation" : { }
+        }, {
+          "id" : "18",
+          "tags" : "Element,Component",
+          "properties" : {
+            "structurizr.dsl.identifier" : "authcoderepository"
+          },
+          "name" : "AuthCodeRepository",
+          "description" : "Interfaz operaciones de acceso a datos",
+          "relationships" : [ {
+            "id" : "101",
+            "tags" : "Relationship",
+            "properties" : {
+              "structurizr.dsl.identifier" : "9ac20030-6488-4c03-9b62-1fdbf241aa31"
+            },
+            "sourceId" : "18",
+            "destinationId" : "61",
+            "description" : "Realiza lectura y escritura",
+            "technology" : "Spring Data/JPA"
+          } ],
+          "group" : "sendotp",
+          "technology" : "Spring MVC - Repository",
+          "documentation" : { }
+        }, {
+          "id" : "11",
+          "tags" : "Element,Component",
+          "properties" : {
+            "structurizr.dsl.identifier" : "authuserservice"
+          },
+          "name" : "AuthUserService",
+          "description" : "Contiene la logica de la cuenta de usuario.",
+          "relationships" : [ {
+            "id" : "90",
+            "tags" : "Relationship",
+            "properties" : {
+              "structurizr.dsl.identifier" : "992fc341-fc6d-4402-aad3-b20339cc45b6"
+            },
+            "sourceId" : "11",
+            "destinationId" : "12",
+            "description" : "Utiliza"
+          } ],
+          "group" : "user",
+          "technology" : "Spring MVC - Service",
+          "documentation" : { }
+        }, {
+          "id" : "17",
+          "tags" : "Element,Component",
+          "properties" : {
+            "structurizr.dsl.identifier" : "authcodeservice"
+          },
+          "name" : "AuthCodeService",
+          "description" : "Contiene la logica generacion y envio de OTP",
+          "relationships" : [ {
+            "id" : "103",
+            "tags" : "Relationship",
+            "properties" : {
+              "structurizr.dsl.identifier" : "56ed46be-b1d9-4ec7-b95d-7e96c9ad3da6"
+            },
+            "sourceId" : "17",
+            "destinationId" : "19",
+            "description" : "Utiliza"
+          }, {
+            "id" : "100",
+            "tags" : "Relationship",
+            "properties" : {
+              "structurizr.dsl.identifier" : "b50fa5df-80ea-443d-ac53-9cd3b7bc88bb"
+            },
+            "sourceId" : "17",
+            "destinationId" : "18",
+            "description" : "Utiliza"
+          } ],
+          "group" : "sendotp",
+          "technology" : "Spring MVC - Service",
+          "documentation" : { }
+        }, {
+          "id" : "10",
+          "tags" : "Element,Component",
+          "properties" : {
+            "structurizr.dsl.identifier" : "authusercontroller"
+          },
+          "name" : "AuthUserController",
+          "description" : "Permite a los usuarios la gestion de la cuenta",
+          "relationships" : [ {
+            "id" : "89",
+            "tags" : "Relationship",
+            "properties" : {
+              "structurizr.dsl.identifier" : "3d2d21d9-abc2-4fa8-8bdb-4a528adf2409"
+            },
+            "sourceId" : "10",
+            "destinationId" : "11",
+            "description" : "Utiliza"
+          } ],
+          "group" : "user",
+          "technology" : "Spring MVC - Rest Controller",
+          "documentation" : { }
+        }, {
+          "id" : "7",
+          "tags" : "Element,Component",
+          "properties" : {
+            "structurizr.dsl.identifier" : "authcontroller"
+          },
+          "name" : "AuthController",
+          "description" : "Permite a los usuarios iniciar sesion",
+          "relationships" : [ {
+            "id" : "84",
+            "tags" : "Relationship",
+            "properties" : {
+              "structurizr.dsl.identifier" : "a0a7be0d-c6c6-418a-b681-c2ca565fee9c"
+            },
+            "sourceId" : "7",
+            "destinationId" : "8",
+            "description" : "Utiliza"
+          } ],
+          "group" : "auth",
+          "technology" : "Spring MVC - Rest Controller",
+          "documentation" : { }
+        }, {
+          "id" : "13",
+          "tags" : "Element,Component",
+          "properties" : {
+            "structurizr.dsl.identifier" : "restorepasscontroller"
+          },
+          "name" : "RestorePassController",
+          "description" : "Permite a los usuarios la recuperación de contraseña",
+          "relationships" : [ {
+            "id" : "94",
+            "tags" : "Relationship",
+            "properties" : {
+              "structurizr.dsl.identifier" : "d20cdf54-c3b4-4817-b5e1-ead85cca26b5"
+            },
+            "sourceId" : "13",
+            "destinationId" : "14",
+            "description" : "Utiliza"
+          } ],
+          "group" : "restorepass",
+          "technology" : "Spring MVC - Rest Controller",
+          "documentation" : { }
+        }, {
+          "id" : "9",
+          "tags" : "Element,Component",
+          "properties" : {
+            "structurizr.dsl.identifier" : "securitycomponent"
+          },
+          "name" : "Security Component",
+          "description" : "Administra autenticación de usuarios y protege los recursos y servicios web",
+          "group" : "auth",
+          "technology" : "Spring security",
+          "documentation" : { }
+        }, {
+          "id" : "19",
+          "tags" : "Element,Component",
+          "properties" : {
+            "structurizr.dsl.identifier" : "emailservice"
+          },
+          "name" : "EmailService",
+          "description" : "Contiene la logica del envio de correos electronicos",
+          "relationships" : [ {
+            "id" : "104",
+            "tags" : "Relationship",
+            "properties" : {
+              "structurizr.dsl.identifier" : "b752b8f6-2f3a-438a-a172-8865efc99bd7"
+            },
+            "sourceId" : "19",
+            "destinationId" : "65",
+            "description" : "Envía correo electrónico usando"
+          } ],
+          "technology" : "Spring MVC - Service",
+          "documentation" : { }
+        }, {
+          "id" : "16",
+          "tags" : "Element,Component",
+          "properties" : {
+            "structurizr.dsl.identifier" : "authcodecontroller"
+          },
+          "name" : "AuthCodeController",
+          "description" : "Permite a los usuarios la generacion de OTP para registro.",
+          "relationships" : [ {
+            "id" : "99",
+            "tags" : "Relationship",
+            "properties" : {
+              "structurizr.dsl.identifier" : "2892ec0a-0ad2-49e8-8abf-5dbd4498cf1b"
+            },
+            "sourceId" : "16",
+            "destinationId" : "17",
+            "description" : "Utiliza"
+          } ],
+          "group" : "sendotp",
+          "technology" : "Spring MVC - Rest Controller",
+          "documentation" : { }
+        }, {
+          "id" : "12",
+          "tags" : "Element,Component",
+          "properties" : {
+            "structurizr.dsl.identifier" : "authuserrepository"
+          },
+          "name" : "AuthUserRepository",
+          "description" : "Interfaz operaciones de acceso a datos",
+          "relationships" : [ {
+            "id" : "91",
+            "tags" : "Relationship",
+            "properties" : {
+              "structurizr.dsl.identifier" : "e067b8a0-027b-4579-ad06-bd3a3710ccce"
+            },
+            "sourceId" : "12",
+            "destinationId" : "61",
+            "description" : "Realiza lectura y escritura",
+            "technology" : "Spring Data/JPA"
+          } ],
+          "group" : "user",
+          "technology" : "Spring MVC - Repository",
+          "documentation" : { }
+        }, {
+          "id" : "14",
+          "tags" : "Element,Component",
+          "properties" : {
+            "structurizr.dsl.identifier" : "restorepassservice"
+          },
+          "name" : "RestorePassService",
+          "description" : "Contiene la logica de recuperación de contraseña",
+          "relationships" : [ {
+            "id" : "102",
+            "tags" : "Relationship",
+            "properties" : {
+              "structurizr.dsl.identifier" : "0ac8ef34-9b26-481e-a25a-c97c37c7ad6e"
+            },
+            "sourceId" : "14",
+            "destinationId" : "19",
+            "description" : "Utiliza"
+          }, {
+            "id" : "95",
+            "tags" : "Relationship",
+            "properties" : {
+              "structurizr.dsl.identifier" : "ae3a98f5-ac5d-47f2-b57b-e9984fee1e3b"
+            },
+            "sourceId" : "14",
+            "destinationId" : "15",
+            "description" : "Utiliza"
+          } ],
+          "group" : "restorepass",
+          "technology" : "Spring MVC - Service",
+          "documentation" : { }
+        } ],
+        "documentation" : { }
+      }, {
+        "id" : "4",
+        "tags" : "Element,Container,Web Browser",
+        "properties" : {
+          "structurizr.dsl.identifier" : "spaadmin"
+        },
+        "name" : "SPA - Administrador",
+        "description" : "Aplicación web para perfil administrador",
+        "relationships" : [ {
+          "id" : "77",
+          "tags" : "Relationship",
+          "properties" : {
+            "structurizr.dsl.identifier" : "5dddbec6-f862-4ecb-b730-108ab4712272"
+          },
+          "sourceId" : "4",
+          "destinationId" : "48",
+          "description" : "Realiza llamadas API a",
+          "technology" : "JSON/HTTP"
+        }, {
+          "id" : "97",
+          "tags" : "Relationship",
+          "properties" : {
+            "structurizr.dsl.identifier" : "e83ae245-df24-4d31-9ab6-f681d6526c10"
+          },
+          "sourceId" : "4",
+          "destinationId" : "16",
+          "description" : "Realiza llamadas API a",
+          "technology" : "JSON/HTTP"
+        }, {
+          "id" : "155",
+          "tags" : "Relationship",
+          "properties" : {
+            "structurizr.dsl.identifier" : "35622fd9-358c-4acd-aae9-1b7599c6998f"
+          },
+          "sourceId" : "4",
+          "destinationId" : "53",
+          "description" : "Realiza llamadas API a",
+          "technology" : "JSON/HTTP"
+        }, {
+          "id" : "79",
+          "tags" : "Relationship",
+          "properties" : {
+            "structurizr.dsl.identifier" : "9719d736-6e7a-488f-80e6-1e3e0a884406"
+          },
+          "sourceId" : "4",
+          "destinationId" : "29",
+          "description" : "Realiza llamadas API a",
+          "technology" : "JSON/HTTP"
+        }, {
+          "id" : "134",
+          "tags" : "Relationship",
+          "properties" : {
+            "structurizr.dsl.identifier" : "f51b7147-971c-438a-8788-376f4d455a6b"
+          },
+          "sourceId" : "4",
+          "destinationId" : "39",
+          "description" : "Realiza llamadas API a",
+          "technology" : "JSON/HTTP"
+        }, {
+          "id" : "139",
+          "tags" : "Relationship",
+          "properties" : {
+            "structurizr.dsl.identifier" : "8ba7ea6e-7c51-4ecf-95aa-ecc0cfb5b346"
+          },
+          "sourceId" : "4",
+          "destinationId" : "42",
+          "description" : "Realiza llamadas API a",
+          "technology" : "JSON/HTTP"
+        }, {
+          "id" : "129",
+          "tags" : "Relationship",
+          "properties" : {
+            "structurizr.dsl.identifier" : "2c8d8b31-7d2d-421c-b987-9a8fdf45cc86"
+          },
+          "sourceId" : "4",
+          "destinationId" : "36",
+          "description" : "Realiza llamadas API a",
+          "technology" : "JSON/HTTP"
+        }, {
+          "id" : "160",
+          "tags" : "Relationship",
+          "properties" : {
+            "structurizr.dsl.identifier" : "bd957abf-520a-410d-8b30-f36035298d8c"
+          },
+          "sourceId" : "4",
+          "destinationId" : "56",
+          "description" : "Realiza llamadas API a",
+          "technology" : "JSON/HTTP"
+        }, {
+          "id" : "124",
+          "tags" : "Relationship",
+          "properties" : {
+            "structurizr.dsl.identifier" : "173e9f2f-1c1c-4b18-a608-814a4b30e640"
+          },
+          "sourceId" : "4",
+          "destinationId" : "33",
+          "description" : "Realiza llamadas API a",
+          "technology" : "JSON/HTTP"
+        }, {
+          "id" : "82",
+          "tags" : "Relationship",
+          "properties" : {
+            "structurizr.dsl.identifier" : "b77883c4-d13d-413a-b152-bfda0ad8f2aa"
+          },
+          "sourceId" : "4",
+          "destinationId" : "7",
+          "description" : "Realiza llamadas API a",
+          "technology" : "JSON/HTTP"
+        }, {
+          "id" : "149",
+          "tags" : "Relationship",
+          "properties" : {
+            "structurizr.dsl.identifier" : "a7e11188-d4cc-4e82-ac04-c32235eb4652"
+          },
+          "sourceId" : "4",
+          "destinationId" : "49",
+          "description" : "Realiza llamadas API a",
+          "technology" : "JSON/HTTP"
+        }, {
+          "id" : "75",
+          "tags" : "Relationship",
+          "properties" : {
+            "structurizr.dsl.identifier" : "f6d61d05-3984-4d27-8d65-1e63d29a7b87"
+          },
+          "sourceId" : "4",
+          "destinationId" : "6",
+          "description" : "Realiza llamadas API a",
+          "technology" : "JSON/HTTP"
+        }, {
+          "id" : "92",
+          "tags" : "Relationship",
+          "properties" : {
+            "structurizr.dsl.identifier" : "55233b18-a355-47d9-81a7-090e589da268"
+          },
+          "sourceId" : "4",
+          "destinationId" : "13",
+          "description" : "Realiza llamadas API a",
+          "technology" : "JSON/HTTP"
+        }, {
+          "id" : "119",
+          "tags" : "Relationship",
+          "properties" : {
+            "structurizr.dsl.identifier" : "0c077e39-b61a-4829-afe7-87035d9da6bb"
+          },
+          "sourceId" : "4",
+          "destinationId" : "30",
+          "description" : "Realiza llamadas API a",
+          "technology" : "JSON/HTTP"
+        }, {
+          "id" : "87",
+          "tags" : "Relationship",
+          "properties" : {
+            "structurizr.dsl.identifier" : "7cd0ebdf-1373-4129-9e89-e87a09f070a7"
+          },
+          "sourceId" : "4",
+          "destinationId" : "10",
+          "description" : "Realiza llamadas API a",
+          "technology" : "JSON/HTTP"
+        }, {
+          "id" : "144",
+          "tags" : "Relationship",
+          "properties" : {
+            "structurizr.dsl.identifier" : "62c80bfe-6df3-4e00-a921-03a648f83998"
+          },
+          "sourceId" : "4",
+          "destinationId" : "45",
+          "description" : "Realiza llamadas API a",
+          "technology" : "JSON/HTTP"
+        } ],
+        "group" : "Single Page Applications - Front-end",
+        "technology" : "JavaScript - Angular",
+        "documentation" : { }
+      }, {
+        "id" : "62",
+        "tags" : "Element,Container,Database",
+        "properties" : {
+          "structurizr.dsl.identifier" : "msproviderdb"
+        },
+        "name" : "BD mm_provider",
+        "description" : "Almacena datos de proveedores",
+        "group" : "Microservicios - Back-end",
+        "technology" : "SQL Server",
+        "documentation" : { }
+      }, {
+        "id" : "29",
+        "tags" : "Element,Container",
+        "properties" : {
+          "structurizr.dsl.identifier" : "msdata"
+        },
+        "name" : "API ms_data",
+        "description" : "Contiene la lógica de datos",
+        "relationships" : [ {
+          "id" : "73",
+          "tags" : "Relationship",
+          "properties" : {
+            "structurizr.dsl.identifier" : "f3b7b489-9888-4197-b4f2-a987e930e696"
+          },
+          "sourceId" : "29",
+          "destinationId" : "63",
+          "description" : "Realiza lectura y escritura",
+          "technology" : "Spring Data/JPA"
+        } ],
+        "group" : "Microservicios - Back-end",
+        "technology" : "Java - SpringBoot API",
+        "components" : [ {
+          "id" : "47",
+          "tags" : "Element,Component",
+          "properties" : {
+            "structurizr.dsl.identifier" : "unitrepository"
+          },
+          "name" : "ProviderRepository",
+          "description" : "Interfaz operaciones de acceso a datos",
+          "relationships" : [ {
+            "id" : "148",
+            "tags" : "Relationship",
+            "properties" : {
+              "structurizr.dsl.identifier" : "97bf1968-bb6c-4d13-98e0-0b1479284a2e"
+            },
+            "sourceId" : "47",
+            "destinationId" : "63",
+            "description" : "Realiza lectura y escritura",
+            "technology" : "Spring Data/JPA"
+          } ],
+          "group" : "unit",
+          "technology" : "Spring MVC - Repository",
+          "documentation" : { }
+        }, {
+          "id" : "41",
+          "tags" : "Element,Component",
+          "properties" : {
+            "structurizr.dsl.identifier" : "paramfilesrepository"
+          },
+          "name" : "ParamFilesRepository",
+          "description" : "Interfaz operaciones de acceso a datos",
+          "relationships" : [ {
+            "id" : "138",
+            "tags" : "Relationship",
+            "properties" : {
+              "structurizr.dsl.identifier" : "8ab8f32d-aa43-4d78-9bf1-2020d4c6cf07"
+            },
+            "sourceId" : "41",
+            "destinationId" : "63",
+            "description" : "Realiza lectura y escritura",
+            "technology" : "Spring Data/JPA"
+          } ],
+          "group" : "paramsfiles",
+          "technology" : "Spring MVC - Repository",
+          "documentation" : { }
+        }, {
+          "id" : "36",
+          "tags" : "Element,Component",
+          "properties" : {
+            "structurizr.dsl.identifier" : "departmentcontroller"
+          },
+          "name" : "DepartmentController",
+          "description" : "Permite a los usuarios la gestion de departamentos",
+          "relationships" : [ {
+            "id" : "131",
+            "tags" : "Relationship",
+            "properties" : {
+              "structurizr.dsl.identifier" : "6fda613c-d57b-49f3-8880-a8f1472c1e21"
+            },
+            "sourceId" : "36",
+            "destinationId" : "37",
+            "description" : "Utiliza"
+          } ],
+          "group" : "department",
+          "technology" : "Spring MVC - Rest Controller",
+          "documentation" : { }
+        }, {
+          "id" : "38",
+          "tags" : "Element,Component",
+          "properties" : {
+            "structurizr.dsl.identifier" : "departmentrepository"
+          },
+          "name" : "DepartmentRepository",
+          "description" : "Interfaz operaciones de acceso a datos",
+          "relationships" : [ {
+            "id" : "133",
+            "tags" : "Relationship",
+            "properties" : {
+              "structurizr.dsl.identifier" : "fe004068-58cf-49fd-8173-3f4710ba3a10"
+            },
+            "sourceId" : "38",
+            "destinationId" : "63",
+            "description" : "Realiza lectura y escritura",
+            "technology" : "Spring Data/JPA"
+          } ],
+          "group" : "department",
+          "technology" : "Spring MVC - Repository",
+          "documentation" : { }
+        }, {
+          "id" : "44",
+          "tags" : "Element,Component",
+          "properties" : {
+            "structurizr.dsl.identifier" : "productcategoryrepository"
+          },
+          "name" : "ProductCategoryRepository",
+          "description" : "Interfaz operaciones de acceso a datos",
+          "relationships" : [ {
+            "id" : "143",
+            "tags" : "Relationship",
+            "properties" : {
+              "structurizr.dsl.identifier" : "c5be9a3e-3a62-4d64-87c9-7d07edb8d2cb"
+            },
+            "sourceId" : "44",
+            "destinationId" : "63",
+            "description" : "Realiza lectura y escritura",
+            "technology" : "Spring Data/JPA"
+          } ],
+          "group" : "productcategory",
+          "technology" : "Spring MVC - Repository",
+          "documentation" : { }
+        }, {
+          "id" : "40",
+          "tags" : "Element,Component",
+          "properties" : {
+            "structurizr.dsl.identifier" : "paramfilesservice"
+          },
+          "name" : "ParamFilesService",
+          "description" : "Contiene la logica para la administracion de parametros de archivo",
+          "relationships" : [ {
+            "id" : "137",
+            "tags" : "Relationship",
+            "properties" : {
+              "structurizr.dsl.identifier" : "7cf00731-a2d6-4ad9-9047-dacb05a503ca"
+            },
+            "sourceId" : "40",
+            "destinationId" : "41",
+            "description" : "Utiliza"
+          } ],
+          "group" : "paramsfiles",
+          "technology" : "Spring MVC - Service",
+          "documentation" : { }
+        }, {
+          "id" : "35",
+          "tags" : "Element,Component",
+          "properties" : {
+            "structurizr.dsl.identifier" : "cityrepository"
+          },
+          "name" : "CityRepository",
+          "description" : "Interfaz operaciones de acceso a datos",
+          "relationships" : [ {
+            "id" : "128",
+            "tags" : "Relationship",
+            "properties" : {
+              "structurizr.dsl.identifier" : "ade39339-2356-4aae-938e-1c70bd667575"
+            },
+            "sourceId" : "35",
+            "destinationId" : "63",
+            "description" : "Realiza lectura y escritura",
+            "technology" : "Spring Data/JPA"
+          } ],
+          "group" : "city",
+          "technology" : "Spring MVC - Repository",
+          "documentation" : { }
+        }, {
+          "id" : "32",
+          "tags" : "Element,Component",
+          "properties" : {
+            "structurizr.dsl.identifier" : "azurefilerepository"
+          },
+          "name" : "AzureFileRepository",
+          "description" : "Interfaz operaciones de acceso a datos",
+          "relationships" : [ {
+            "id" : "123",
+            "tags" : "Relationship",
+            "properties" : {
+              "structurizr.dsl.identifier" : "f9c5928a-3a89-467e-9929-37981863722c"
+            },
+            "sourceId" : "32",
+            "destinationId" : "63",
+            "description" : "Realiza lectura y escritura",
+            "technology" : "Spring Data/JPA"
+          } ],
+          "group" : "azurefile",
+          "technology" : "Spring MVC - Repository",
+          "documentation" : { }
+        }, {
+          "id" : "37",
+          "tags" : "Element,Component",
+          "properties" : {
+            "structurizr.dsl.identifier" : "departmentservice"
+          },
+          "name" : "DepartmentService",
+          "description" : "Contiene la logica para la administracion de departamentos",
+          "relationships" : [ {
+            "id" : "132",
+            "tags" : "Relationship",
+            "properties" : {
+              "structurizr.dsl.identifier" : "4625db1b-e5d2-4296-a640-c3d5933289e9"
+            },
+            "sourceId" : "37",
+            "destinationId" : "38",
+            "description" : "Utiliza"
+          } ],
+          "group" : "department",
+          "technology" : "Spring MVC - Service",
+          "documentation" : { }
+        }, {
+          "id" : "43",
+          "tags" : "Element,Component",
+          "properties" : {
+            "structurizr.dsl.identifier" : "productcategoryservice"
+          },
+          "name" : "ProductCategoryService",
+          "description" : "Contiene la logica para la administracion de categorias de producto",
+          "relationships" : [ {
+            "id" : "142",
+            "tags" : "Relationship",
+            "properties" : {
+              "structurizr.dsl.identifier" : "7f26f0b7-c1fc-4930-951d-788484edf764"
+            },
+            "sourceId" : "43",
+            "destinationId" : "44",
+            "description" : "Utiliza"
+          } ],
+          "group" : "productcategory",
+          "technology" : "Spring MVC - Service",
+          "documentation" : { }
+        }, {
+          "id" : "34",
+          "tags" : "Element,Component",
+          "properties" : {
+            "structurizr.dsl.identifier" : "cityservice"
+          },
+          "name" : "CityService",
+          "description" : "Contiene la logica para la administracion de ciudad",
+          "relationships" : [ {
+            "id" : "127",
+            "tags" : "Relationship",
+            "properties" : {
+              "structurizr.dsl.identifier" : "601f9e6f-1257-4c0e-a942-2f74ccbae115"
+            },
+            "sourceId" : "34",
+            "destinationId" : "35",
+            "description" : "Utiliza"
+          } ],
+          "group" : "city",
+          "technology" : "Spring MVC - Service",
+          "documentation" : { }
+        }, {
+          "id" : "30",
+          "tags" : "Element,Component",
+          "properties" : {
+            "structurizr.dsl.identifier" : "azurefilecontroller"
+          },
+          "name" : "AzureFileController",
+          "description" : "Permite a los usuarios la gestion de archivos",
+          "relationships" : [ {
+            "id" : "121",
+            "tags" : "Relationship",
+            "properties" : {
+              "structurizr.dsl.identifier" : "638e925b-c5f4-4e79-bd92-dc38f38cf173"
+            },
+            "sourceId" : "30",
+            "destinationId" : "31",
+            "description" : "Utiliza"
+          } ],
+          "group" : "azurefile",
+          "technology" : "Spring MVC - Rest Controller",
+          "documentation" : { }
+        }, {
+          "id" : "45",
+          "tags" : "Element,Component",
+          "properties" : {
+            "structurizr.dsl.identifier" : "unitcontroller"
+          },
+          "name" : "ProviderController",
+          "description" : "Permite a los usuarios la gestion de unidades",
+          "relationships" : [ {
+            "id" : "146",
+            "tags" : "Relationship",
+            "properties" : {
+              "structurizr.dsl.identifier" : "e87f1cb5-b742-455d-9adf-48cfd531a236"
+            },
+            "sourceId" : "45",
+            "destinationId" : "46",
+            "description" : "Utiliza"
+          } ],
+          "group" : "unit",
+          "technology" : "Spring MVC - Rest Controller",
+          "documentation" : { }
+        }, {
+          "id" : "42",
+          "tags" : "Element,Component",
+          "properties" : {
+            "structurizr.dsl.identifier" : "productcategorycontroller"
+          },
+          "name" : "ProductCategoryController",
+          "description" : "Permite a los usuarios la gestion de categorias de producto",
+          "relationships" : [ {
+            "id" : "141",
+            "tags" : "Relationship",
+            "properties" : {
+              "structurizr.dsl.identifier" : "8572e5be-8c85-4908-9dae-46b0f8f38925"
+            },
+            "sourceId" : "42",
+            "destinationId" : "43",
+            "description" : "Utiliza"
+          } ],
+          "group" : "productcategory",
+          "technology" : "Spring MVC - Rest Controller",
+          "documentation" : { }
+        }, {
+          "id" : "31",
+          "tags" : "Element,Component",
+          "properties" : {
+            "structurizr.dsl.identifier" : "azurefileservice"
+          },
+          "name" : "AzureFileService",
+          "description" : "Contiene la logica para la gestion de archivos",
+          "relationships" : [ {
+            "id" : "122",
+            "tags" : "Relationship",
+            "properties" : {
+              "structurizr.dsl.identifier" : "200a6990-f9a1-4ada-9c80-09f018eb0f5c"
+            },
+            "sourceId" : "31",
+            "destinationId" : "32",
+            "description" : "Utiliza"
+          } ],
+          "group" : "azurefile",
+          "technology" : "Spring MVC - Service",
+          "documentation" : { }
+        }, {
+          "id" : "46",
+          "tags" : "Element,Component",
+          "properties" : {
+            "structurizr.dsl.identifier" : "unitservice"
+          },
+          "name" : "ProviderService",
+          "description" : "Contiene la logica para la administracion de unidades",
+          "relationships" : [ {
+            "id" : "147",
+            "tags" : "Relationship",
+            "properties" : {
+              "structurizr.dsl.identifier" : "7268c406-cd35-45e8-9a5b-b4adfeade73c"
+            },
+            "sourceId" : "46",
+            "destinationId" : "47",
+            "description" : "Utiliza"
+          } ],
+          "group" : "unit",
+          "technology" : "Spring MVC - Service",
+          "documentation" : { }
+        }, {
+          "id" : "33",
+          "tags" : "Element,Component",
+          "properties" : {
+            "structurizr.dsl.identifier" : "citycontroller"
+          },
+          "name" : "CityController",
+          "description" : "Permite a los usuarios la gestion ciudad",
+          "relationships" : [ {
+            "id" : "126",
+            "tags" : "Relationship",
+            "properties" : {
+              "structurizr.dsl.identifier" : "ce4de1e3-8d47-498f-820b-5f256d15fcec"
+            },
+            "sourceId" : "33",
+            "destinationId" : "34",
+            "description" : "Utiliza"
+          } ],
+          "group" : "city",
+          "technology" : "Spring MVC - Rest Controller",
+          "documentation" : { }
+        }, {
+          "id" : "39",
+          "tags" : "Element,Component",
+          "properties" : {
+            "structurizr.dsl.identifier" : "paramfilescontroller"
+          },
+          "name" : "ParamFilesController",
+          "description" : "Permite a los usuarios la gestion de parametros de archivo",
+          "relationships" : [ {
+            "id" : "136",
+            "tags" : "Relationship",
+            "properties" : {
+              "structurizr.dsl.identifier" : "9e626cef-210a-4d53-958b-e94fcb9884e4"
+            },
+            "sourceId" : "39",
+            "destinationId" : "40",
+            "description" : "Utiliza"
+          } ],
+          "group" : "paramsfiles",
+          "technology" : "Spring MVC - Rest Controller",
+          "documentation" : { }
+        } ],
+        "documentation" : { }
+      }, {
+        "id" : "63",
+        "tags" : "Element,Container,Database",
+        "properties" : {
+          "structurizr.dsl.identifier" : "msdatadb"
+        },
+        "name" : "BD mm_data",
+        "description" : "Almacena registros relacionados con archivos.",
+        "group" : "Microservicios - Back-end",
+        "technology" : "SQL Server",
+        "documentation" : { }
+      } ],
+      "documentation" : { }
+    }, {
+      "id" : "65",
+      "tags" : "Element,Software System,Existing System",
+      "properties" : {
+        "structurizr.dsl.identifier" : "emailsystem"
+      },
+      "name" : "Email - SMTP",
+      "description" : "Envio de correos a traves de servidor SMTP",
+      "location" : "Unspecified",
+      "documentation" : { }
+    } ]
+  },
+  "documentation" : { },
+  "views" : {
+    "systemContextViews" : [ {
+      "key" : "SystemContext-001",
+      "order" : 1,
+      "softwareSystemId" : "3",
+      "dimensions" : {
+        "width" : 2300,
+        "height" : 1500
+      },
+      "automaticLayout" : {
+        "implementation" : "Graphviz",
+        "rankDirection" : "LeftRight",
+        "rankSeparation" : 300,
+        "nodeSeparation" : 300,
+        "edgeSeparation" : 0,
+        "vertices" : false
+      },
+      "enterpriseBoundaryVisible" : true,
+      "relationships" : [ {
+        "id" : "70"
+      }, {
+        "id" : "66"
+      }, {
+        "id" : "68"
+      } ],
+      "elements" : [ {
+        "id" : "1",
+        "x" : 200,
+        "y" : 199
+      }, {
+        "id" : "2",
+        "x" : 200,
+        "y" : 899
+      }, {
+        "id" : "3",
+        "x" : 900,
+        "y" : 599
+      }, {
+        "id" : "65",
+        "x" : 1650,
+        "y" : 599
+      } ]
+    } ],
+    "containerViews" : [ {
+      "key" : "Container-001",
+      "order" : 2,
+      "softwareSystemId" : "3",
+      "dimensions" : {
+        "width" : 3902,
+        "height" : 3365
+      },
+      "automaticLayout" : {
+        "implementation" : "Graphviz",
+        "rankDirection" : "TopBottom",
+        "rankSeparation" : 300,
+        "nodeSeparation" : 300,
+        "edgeSeparation" : 0,
+        "vertices" : false
+      },
+      "externalSoftwareSystemBoundariesVisible" : true,
+      "relationships" : [ {
+        "id" : "72"
+      }, {
+        "id" : "80"
+      }, {
+        "id" : "81"
+      }, {
+        "id" : "71"
+      }, {
+        "id" : "74"
+      }, {
+        "id" : "73"
+      }, {
+        "id" : "76"
+      }, {
+        "id" : "75",
+        "vertices" : [ {
+          "x" : 1964,
+          "y" : 1304
+        }, {
+          "x" : 2339,
+          "y" : 1396
+        } ]
+      }, {
+        "id" : "67"
+      }, {
+        "id" : "78",
+        "vertices" : [ {
+          "x" : 1964,
+          "y" : 1304
+        }, {
+          "x" : 1589,
+          "y" : 1396
+        } ]
+      }, {
+        "id" : "77"
+      }, {
+        "id" : "69"
+      }, {
+        "id" : "79"
+      }, {
+        "id" : "105"
+      } ],
+      "elements" : [ {
+        "id" : "48",
+        "x" : 989,
+        "y" : 1500
+      }, {
+        "id" : "29",
+        "x" : 1739,
+        "y" : 1500
+      }, {
+        "id" : "1",
+        "x" : 1389,
+        "y" : 200
+      }, {
+        "id" : "2",
+        "x" : 2139,
+        "y" : 200
+      }, {
+        "id" : "4",
+        "x" : 1364,
+        "y" : 900
+      }, {
+        "id" : "5",
+        "x" : 2114,
+        "y" : 900
+      }, {
+        "id" : "6",
+        "x" : 2489,
+        "y" : 1500
+      }, {
+        "id" : "61",
+        "x" : 2489,
+        "y" : 2100
+      }, {
+        "id" : "62",
+        "x" : 239,
+        "y" : 2700
+      }, {
+        "id" : "63",
+        "x" : 1739,
+        "y" : 2100
+      }, {
+        "id" : "64",
+        "x" : 989,
+        "y" : 2100
+      }, {
+        "id" : "20",
+        "x" : 239,
+        "y" : 2100
+      }, {
+        "id" : "65",
+        "x" : 3251,
+        "y" : 2100
+      } ]
+    } ],
+    "componentViews" : [ {
+      "key" : "Components",
+      "order" : 3,
+      "description" : "El diagrama de componentes msAuth de la aplicación API.",
+      "dimensions" : {
+        "width" : 3955,
+        "height" : 3100
+      },
+      "automaticLayout" : {
+        "implementation" : "Graphviz",
+        "rankDirection" : "TopBottom",
+        "rankSeparation" : 300,
+        "nodeSeparation" : 300,
+        "edgeSeparation" : 0,
+        "vertices" : false
+      },
+      "containerId" : "6",
+      "externalContainerBoundariesVisible" : true,
+      "relationships" : [ {
+        "id" : "82"
+      }, {
+        "id" : "93"
+      }, {
+        "id" : "83",
+        "vertices" : [ {
+          "x" : 1586,
+          "y" : 591
+        } ]
+      }, {
+        "id" : "94"
+      }, {
+        "id" : "91",
+        "vertices" : [ {
+          "x" : 823,
+          "y" : 2508
+        } ]
+      }, {
+        "id" : "92",
+        "vertices" : [ {
+          "x" : 1632,
+          "y" : 591
+        } ]
+      }, {
+        "id" : "86"
+      }, {
+        "id" : "97",
+        "vertices" : [ {
+          "x" : 1611,
+          "y" : 499
+        }, {
+          "x" : 2394,
+          "y" : 591
+        } ]
+      }, {
+        "id" : "87",
+        "vertices" : [ {
+          "x" : 823,
+          "y" : 591
+        } ]
+      }, {
+        "id" : "98"
+      }, {
+        "id" : "84"
+      }, {
+        "id" : "95"
+      }, {
+        "id" : "85"
+      }, {
+        "id" : "96"
+      }, {
+        "id" : "90"
+      }, {
+        "id" : "100"
+      }, {
+        "id" : "88",
+        "vertices" : [ {
+          "x" : 1607,
+          "y" : 499
+        }, {
+          "x" : 823,
+          "y" : 591
+        } ]
+      }, {
+        "id" : "102"
+      }, {
+        "id" : "99"
+      }, {
+        "id" : "101",
+        "vertices" : [ {
+          "x" : 3248,
+          "y" : 2508
+        }, {
+          "x" : 2365,
+          "y" : 2599
+        } ]
+      }, {
+        "id" : "89"
+      }, {
+        "id" : "104"
+      }, {
+        "id" : "103"
+      } ],
+      "elements" : [ {
+        "id" : "11",
+        "x" : 240,
+        "y" : 1399
+      }, {
+        "id" : "12",
+        "x" : 240,
+        "y" : 1999
+      }, {
+        "id" : "13",
+        "x" : 1765,
+        "y" : 799
+      }, {
+        "id" : "14",
+        "x" : 1765,
+        "y" : 1399
+      }, {
+        "id" : "15",
+        "x" : 1765,
+        "y" : 1999
+      }, {
+        "id" : "16",
+        "x" : 3265,
+        "y" : 799
+      }, {
+        "id" : "17",
+        "x" : 3265,
+        "y" : 1399
+      }, {
+        "id" : "18",
+        "x" : 3265,
+        "y" : 1999
+      }, {
+        "id" : "19",
+        "x" : 2515,
+        "y" : 1999
+      }, {
+        "id" : "4",
+        "x" : 1007,
+        "y" : 199
+      }, {
+        "id" : "5",
+        "x" : 1761,
+        "y" : 199
+      }, {
+        "id" : "7",
+        "x" : 1002,
+        "y" : 799
+      }, {
+        "id" : "8",
+        "x" : 1002,
+        "y" : 1399
+      }, {
+        "id" : "9",
+        "x" : 1002,
+        "y" : 1999
+      }, {
+        "id" : "61",
+        "x" : 1765,
+        "y" : 2599
+      }, {
+        "id" : "10",
+        "x" : 240,
+        "y" : 799
+      }, {
+        "id" : "65",
+        "x" : 2515,
+        "y" : 2599
+      } ]
+    }, {
+      "key" : "Component-003",
+      "order" : 6,
+      "description" : "El diagrama de componentes msMarket de la aplicación API.",
+      "dimensions" : {
+        "width" : 4692,
+        "height" : 3100
+      },
+      "automaticLayout" : {
+        "implementation" : "Graphviz",
+        "rankDirection" : "TopBottom",
+        "rankSeparation" : 300,
+        "nodeSeparation" : 300,
+        "edgeSeparation" : 0,
+        "vertices" : false
+      },
+      "containerId" : "48",
+      "externalContainerBoundariesVisible" : true,
+      "relationships" : [ {
+        "id" : "160"
+      }, {
+        "id" : "153"
+      }, {
+        "id" : "164"
+      }, {
+        "id" : "152"
+      }, {
+        "id" : "163"
+      }, {
+        "id" : "162"
+      }, {
+        "id" : "151"
+      }, {
+        "id" : "161"
+      }, {
+        "id" : "150"
+      }, {
+        "id" : "168"
+      }, {
+        "id" : "157"
+      }, {
+        "id" : "167"
+      }, {
+        "id" : "156",
+        "vertices" : [ {
+          "x" : 1602,
+          "y" : 499
+        }, {
+          "x" : 823,
+          "y" : 591
+        } ]
+      }, {
+        "id" : "166"
+      }, {
+        "id" : "155",
+        "vertices" : [ {
+          "x" : 823,
+          "y" : 591
+        } ]
+      }, {
+        "id" : "154",
+        "vertices" : [ {
+          "x" : 3236,
+          "y" : 2508
+        }, {
+          "x" : 2352,
+          "y" : 2599
+        } ]
+      }, {
+        "id" : "165"
+      }, {
+        "id" : "149",
+        "vertices" : [ {
+          "x" : 1602,
+          "y" : 499
+        }, {
+          "x" : 2382,
+          "y" : 591
+        } ]
+      }, {
+        "id" : "159",
+        "vertices" : [ {
+          "x" : 823,
+          "y" : 2508
+        } ]
+      }, {
+        "id" : "169"
+      }, {
+        "id" : "158"
+      } ],
+      "elements" : [ {
+        "id" : "55",
+        "x" : 240,
+        "y" : 1999
+      }, {
+        "id" : "56",
+        "x" : 1377,
+        "y" : 799
+      }, {
+        "id" : "57",
+        "x" : 1377,
+        "y" : 1399
+      }, {
+        "id" : "58",
+        "x" : 1002,
+        "y" : 1999
+      }, {
+        "id" : "59",
+        "x" : 1752,
+        "y" : 1999
+      }, {
+        "id" : "49",
+        "x" : 3252,
+        "y" : 799
+      }, {
+        "id" : "4",
+        "x" : 1002,
+        "y" : 199
+      }, {
+        "id" : "5",
+        "x" : 1752,
+        "y" : 199
+      }, {
+        "id" : "60",
+        "x" : 2502,
+        "y" : 1999
+      }, {
+        "id" : "50",
+        "x" : 3252,
+        "y" : 1399
+      }, {
+        "id" : "51",
+        "x" : 3252,
+        "y" : 1999
+      }, {
+        "id" : "52",
+        "x" : 4002,
+        "y" : 1999
+      }, {
+        "id" : "64",
+        "x" : 1377,
+        "y" : 2599
+      }, {
+        "id" : "20",
+        "x" : 2502,
+        "y" : 2599
+      }, {
+        "id" : "53",
+        "x" : 240,
+        "y" : 799
+      }, {
+        "id" : "54",
+        "x" : 240,
+        "y" : 1399
+      } ]
+    }, {
+      "key" : "Component-001",
+      "order" : 4,
+      "description" : "El diagrama de componentes msProvider de la aplicación API.",
+      "dimensions" : {
+        "width" : 3192,
+        "height" : 3100
+      },
+      "automaticLayout" : {
+        "implementation" : "Graphviz",
+        "rankDirection" : "TopBottom",
+        "rankSeparation" : 300,
+        "nodeSeparation" : 300,
+        "edgeSeparation" : 0,
+        "vertices" : false
+      },
+      "containerId" : "20",
+      "externalContainerBoundariesVisible" : true,
+      "relationships" : [ {
+        "id" : "108"
+      }, {
+        "id" : "118",
+        "vertices" : [ {
+          "x" : 839,
+          "y" : 2508
+        } ]
+      }, {
+        "id" : "107"
+      }, {
+        "id" : "109"
+      }, {
+        "id" : "111"
+      }, {
+        "id" : "110"
+      }, {
+        "id" : "113",
+        "vertices" : [ {
+          "x" : 2351,
+          "y" : 2508
+        } ]
+      }, {
+        "id" : "112"
+      }, {
+        "id" : "115"
+      }, {
+        "id" : "114"
+      }, {
+        "id" : "117"
+      }, {
+        "id" : "106"
+      }, {
+        "id" : "116"
+      } ],
+      "elements" : [ {
+        "id" : "22",
+        "x" : 1751,
+        "y" : 1399
+      }, {
+        "id" : "23",
+        "x" : 1751,
+        "y" : 1999
+      }, {
+        "id" : "24",
+        "x" : 2501,
+        "y" : 1999
+      }, {
+        "id" : "25",
+        "x" : 989,
+        "y" : 799
+      }, {
+        "id" : "26",
+        "x" : 989,
+        "y" : 1399
+      }, {
+        "id" : "48",
+        "x" : 1368,
+        "y" : 199
+      }, {
+        "id" : "27",
+        "x" : 239,
+        "y" : 1999
+      }, {
+        "id" : "28",
+        "x" : 989,
+        "y" : 1999
+      }, {
+        "id" : "62",
+        "x" : 1368,
+        "y" : 2599
+      }, {
+        "id" : "21",
+        "x" : 1751,
+        "y" : 799
+      } ]
+    }, {
+      "key" : "Component-002",
+      "order" : 5,
+      "description" : "El diagrama de componentes msData de la aplicación API.",
+      "dimensions" : {
+        "width" : 4742,
+        "height" : 3100
+      },
+      "automaticLayout" : {
+        "implementation" : "Graphviz",
+        "rankDirection" : "TopBottom",
+        "rankSeparation" : 300,
+        "nodeSeparation" : 300,
+        "edgeSeparation" : 0,
+        "vertices" : false
+      },
+      "containerId" : "29",
+      "externalContainerBoundariesVisible" : true,
+      "relationships" : [ {
+        "id" : "130"
+      }, {
+        "id" : "131"
+      }, {
+        "id" : "119",
+        "vertices" : [ {
+          "x" : 2372,
+          "y" : 499
+        }, {
+          "x" : 3918,
+          "y" : 591
+        } ]
+      }, {
+        "id" : "134"
+      }, {
+        "id" : "135",
+        "vertices" : [ {
+          "x" : 2347,
+          "y" : 591
+        } ]
+      }, {
+        "id" : "132"
+      }, {
+        "id" : "133"
+      }, {
+        "id" : "138"
+      }, {
+        "id" : "139",
+        "vertices" : [ {
+          "x" : 1585,
+          "y" : 591
+        } ]
+      }, {
+        "id" : "136"
+      }, {
+        "id" : "137"
+      }, {
+        "id" : "141"
+      }, {
+        "id" : "142"
+      }, {
+        "id" : "120",
+        "vertices" : [ {
+          "x" : 3918,
+          "y" : 591
+        } ]
+      }, {
+        "id" : "140",
+        "vertices" : [ {
+          "x" : 2368,
+          "y" : 499
+        }, {
+          "x" : 1585,
+          "y" : 591
+        } ]
+      }, {
+        "id" : "129",
+        "vertices" : [ {
+          "x" : 2393,
+          "y" : 591
+        } ]
+      }, {
+        "id" : "145",
+        "vertices" : [ {
+          "x" : 2368,
+          "y" : 499
+        }, {
+          "x" : 822,
+          "y" : 591
+        } ]
+      }, {
+        "id" : "122"
+      }, {
+        "id" : "121"
+      }, {
+        "id" : "146"
+      }, {
+        "id" : "143",
+        "vertices" : [ {
+          "x" : 1585,
+          "y" : 2508
+        } ]
+      }, {
+        "id" : "124",
+        "vertices" : [ {
+          "x" : 2372,
+          "y" : 499
+        }, {
+          "x" : 3156,
+          "y" : 591
+        } ]
+      }, {
+        "id" : "144",
+        "vertices" : [ {
+          "x" : 822,
+          "y" : 591
+        } ]
+      }, {
+        "id" : "123",
+        "vertices" : [ {
+          "x" : 3918,
+          "y" : 2508
+        } ]
+      }, {
+        "id" : "127"
+      }, {
+        "id" : "128",
+        "vertices" : [ {
+          "x" : 3156,
+          "y" : 2508
+        } ]
+      }, {
+        "id" : "147"
+      }, {
+        "id" : "125",
+        "vertices" : [ {
+          "x" : 3156,
+          "y" : 591
+        } ]
+      }, {
+        "id" : "148",
+        "vertices" : [ {
+          "x" : 822,
+          "y" : 2508
+        } ]
+      }, {
+        "id" : "126"
+      } ],
+      "elements" : [ {
+        "id" : "44",
+        "x" : 1001,
+        "y" : 1999
+      }, {
+        "id" : "33",
+        "x" : 3289,
+        "y" : 799
+      }, {
+        "id" : "45",
+        "x" : 239,
+        "y" : 799
+      }, {
+        "id" : "34",
+        "x" : 3289,
+        "y" : 1399
+      }, {
+        "id" : "35",
+        "x" : 3289,
+        "y" : 1999
+      }, {
+        "id" : "46",
+        "x" : 239,
+        "y" : 1399
+      }, {
+        "id" : "47",
+        "x" : 239,
+        "y" : 1999
+      }, {
+        "id" : "36",
+        "x" : 2526,
+        "y" : 799
+      }, {
+        "id" : "37",
+        "x" : 2526,
+        "y" : 1399
+      }, {
+        "id" : "38",
+        "x" : 2526,
+        "y" : 1999
+      }, {
+        "id" : "39",
+        "x" : 1764,
+        "y" : 799
+      }, {
+        "id" : "4",
+        "x" : 1768,
+        "y" : 199
+      }, {
+        "id" : "5",
+        "x" : 2522,
+        "y" : 199
+      }, {
+        "id" : "40",
+        "x" : 1764,
+        "y" : 1399
+      }, {
+        "id" : "63",
+        "x" : 2143,
+        "y" : 2599
+      }, {
+        "id" : "30",
+        "x" : 4051,
+        "y" : 799
+      }, {
+        "id" : "41",
+        "x" : 1764,
+        "y" : 1999
+      }, {
+        "id" : "31",
+        "x" : 4051,
+        "y" : 1399
+      }, {
+        "id" : "42",
+        "x" : 1001,
+        "y" : 799
+      }, {
+        "id" : "32",
+        "x" : 4051,
+        "y" : 1999
+      }, {
+        "id" : "43",
+        "x" : 1001,
+        "y" : 1399
+      } ]
+    } ],
+    "configuration" : {
+      "branding" : { },
+      "styles" : {
+        "elements" : [ {
+          "tag" : "Group",
+          "color" : "#009b10"
+        }, {
+          "tag" : "Software System",
+          "background" : "#1168bd",
+          "color" : "#ffffff"
+        }, {
+          "tag" : "Existing System",
+          "background" : "#999999",
+          "color" : "#ffffff"
+        }, {
+          "tag" : "Container",
+          "background" : "#438dd5",
+          "color" : "#ffffff"
+        }, {
+          "tag" : "Web Browser",
+          "shape" : "WebBrowser"
+        }, {
+          "tag" : "Database",
+          "shape" : "Cylinder"
+        } ]
+      },
+      "themes" : [ "https://static.structurizr.com/themes/default/theme.json" ],
+      "terminology" : { },
+      "metadataSymbols" : "SquareBrackets",
+      "lastSavedView" : "Components"
+    }
+  }
+}
