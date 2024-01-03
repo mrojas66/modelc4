@@ -10,7 +10,17 @@ workspace "Mi Mercado"{
             group "Single Page Applications - Front-end"{
                 spaAdmin = container "SPA - Administrador" "Aplicación web para perfil administrador" "JavaScript - Angular" "Web Browser"
                 spaProvider = container "SPA - Proveedor" "Aplicación web para perfil proveedor" "JavaScript - Angular" "Web Browser"
-                spaEntity = container "SPA - Entidad" "Aplicación web para perfil entidad" "JavaScript - Angular" "Web Browser"
+                spaEntity = container "SPA - Entidad" "Aplicación web para perfil entidad" "JavaScript - Angular" "Web Browser"{
+                    group "public-module" {
+                        LoginComponent = component "LoginComponent" "Layout del Login de Entidad" "Angular"
+                        AppComponent = component "AppComponent" "Componente de Entrada" "Angular"
+                    }
+                    group "private-module" {
+                        PrivateComponent = component "PrivateComponent" "Layout del Login de Entidad" "Angular"
+                        UserComponent = component "UserComponent" "Layout del Login de Entidad" "Angular"
+                    }
+                    AuthServiceTS = component "AuthServiceTS" "Servicios/Fetch de API" "Angular"
+                }
             }
             
             group "Microservicios - Back-end"{
@@ -346,6 +356,14 @@ workspace "Mi Mercado"{
         unitService -> unitRepository "Utiliza"
         unitRepository -> msDataDB "Realiza lectura y escritura" "Spring Data/JPA"
 
+        #Relationships spaEntity-----------------------------------------------------
+        #--spaEntity
+        LoginComponent -> AuthServiceTS "Utilza"
+        UserComponent -> AuthServiceTS "Utilza"
+        AppComponent -> PrivateComponent "Si Guard es verdadero"
+        AuthServiceTS -> msAuth
+        AuthServiceTS -> msData
+
     }
 
     views {
@@ -400,6 +418,14 @@ workspace "Mi Mercado"{
             autolayout tb
             description "El diagrama de componentes msOrder de la aplicación API."
         }
+
+        component spaEntity {
+            include *
+            autolayout tb
+            description "El diagrama de componentes Front Entidad"
+        }
+
+        
         theme default
 
         styles {
