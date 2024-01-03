@@ -3,11 +3,14 @@ workspace "Mi Mercado"{
     model {
         admin = person "Administrador" "Usuario de tipo administrador"
         provider = person "Proveedor" "Usuario de tipo proveedor"
+        entity = person "Entidad" "Usuario de tipo entidad"
+
 
         system = softwareSystem "Mi Mercado - 2023" "Software para la administración ofertas empresariales"{
             group "Single Page Applications - Front-end"{
                 spaAdmin = container "SPA - Administrador" "Aplicación web para perfil administrador" "JavaScript - Angular" "Web Browser"
                 spaProvider = container "SPA - Proveedor" "Aplicación web para perfil proveedor" "JavaScript - Angular" "Web Browser"
+                spaEntity = container "SPA - Entidad" "Aplicación web para perfil entidad" "JavaScript - Angular" "Web Browser"
             }
             
             group "Microservicios - Back-end"{
@@ -36,6 +39,11 @@ workspace "Mi Mercado"{
                         authCodeRepository = component "AuthCodeRepository" " Interfaz operaciones de acceso a datos" "Spring MVC - Repository"
                     }
 
+                    group "notification" {
+                        authNotificationController = component "authNotificationController" "Permite la consulta de Notificaciones" "Spring MVC - Rest Controller"
+                        authNotificationService = component "authNotificationService" "Contiene la logica del almacenamiento de notificaciones" "Spring MVC - Service"
+                        authNotificationRepository = component "authNotificationRepository" " Interfaz operacion de acceso a base datos" "Spring MVC - Repository"
+                    }
                     emailService = component "EmailService" "Contiene la logica del envio de correos electronicos" "Spring MVC - Service"
 
                 }
@@ -55,7 +63,6 @@ workspace "Mi Mercado"{
                             providerTypeFilesRepository = component "ProviderTypeFilesRepository" " Interfaz operaciones de acceso a datos" "Spring MVC - Repository"
                             
                     }
-
                 }
 
                 msData = container "API ms_data" "Contiene la lógica de datos" "Java - SpringBoot API"{
@@ -83,16 +90,6 @@ workspace "Mi Mercado"{
                             paramFilesRepository = component "ParamFilesRepository" " Interfaz operaciones de acceso a datos" "Spring MVC - Repository"
                     }
 
-                     group "productcategory" {
-                            productCategoryController = component "ProductCategoryController" "Permite a los usuarios la gestion de categorias de producto" "Spring MVC - Rest Controller"
-                            productCategoryService = component "ProductCategoryService" "Contiene la logica para la administracion de categorias de producto" "Spring MVC - Service"
-                            productCategoryRepository = component "ProductCategoryRepository" " Interfaz operaciones de acceso a datos" "Spring MVC - Repository"
-                    }
-                     group "unit" {
-                            unitController = component "ProviderController" "Permite a los usuarios la gestion de unidades" "Spring MVC - Rest Controller"
-                            unitService = component "ProviderService" "Contiene la logica para la administracion de unidades" "Spring MVC - Service"
-                            unitRepository = component "ProviderRepository" " Interfaz operaciones de acceso a datos" "Spring MVC - Repository"
-                    }
 
                 }
                 msMarket = container "API ms_market" "Contiene la lógica de mercado" "Java - SpringBoot API"{
@@ -113,41 +110,112 @@ workspace "Mi Mercado"{
                             providerRegisterRepository = component "ProviderRegisterRepository" " Interfaz operaciones de acceso a datos" "Spring MVC - Repository"
                             providerFileStatusRepository = component "ProviderFileStatusRepository" " Interfaz operaciones de acceso a datos" "Spring MVC - Repository"
                     }
+                    
+                     group "productcategory" {
+                            productCategoryController = component "ProductCategoryController" "Permite a los usuarios la gestion de categorias de producto" "Spring MVC - Rest Controller"
+                            productCategoryService = component "ProductCategoryService" "Contiene la logica para la administracion de categorias de producto" "Spring MVC - Service"
+                            productCategoryRepository = component "ProductCategoryRepository" " Interfaz operaciones de acceso a datos" "Spring MVC - Repository"
+                    }
+                     group "unit" {
+                            unitController = component "ProviderController" "Permite a los usuarios la gestion de unidades" "Spring MVC - Rest Controller"
+                            unitService = component "ProviderService" "Contiene la logica para la administracion de unidades" "Spring MVC - Service"
+                            unitRepository = component "ProviderRepository" " Interfaz operaciones de acceso a datos" "Spring MVC - Repository"
+                    }
                      providerClient = component "Cliente proveedor API" "Cliente del API de proveedor ms_provider" "Java WebClient"
+                }
+
+                msEntity = container "API ms_entity" "Contiene la lógica de Entidad" "Java - SpringBoot API"{
+                    group "paramchain" {
+                            paramChainController = component "paramChainController" "Permite a los usuarios la gestion de la cadena de la entidad." "Spring MVC - Rest Controller"
+                            paramChainService = component "paramChainService" "Contiene la logica para la gestion de cadena de la entidad" "Spring MVC - Service"
+                    }
+
+                    group "publicorganization" {
+                            publicOrganizationController = component "publicOrganizationController" "Permite a los usuarios la gestion de la entidad." "Spring MVC - Rest Controller"
+                            publicOrganizationService = component "publicOrganizationService" "Contiene la logica para la gestion usuarios de la entidad" "Spring MVC - Service"
+                    }
+                    group "schedulerCoupa" {
+                            schedulerCoupaScheduler = component "schedulerCoupaScheduler" "Contiene la logica de sincronizacion con Coupa." "Spring MVC - Rest Controller"
+                    }
+                }
+
+                msOrder = container "API ms_order" "Contiene la lógica de Ordenes" "Java - SpringBoot API"{
+                    group "order" {
+                            orderController = component "orderController" "Permite a los usuarios la gestion de orden de compra." "Spring MVC - Rest Controller"
+                            orderService = component "orderService" "Contiene la logica para la gestion de orden de compra" "Spring MVC - Service"
+                            orderRepository = component "orderRepository" " Interfaz operaciones de acceso a datos" "Spring MVC - Repository"
+                    }
+                }
+
+                msQuotation = container "API ms_quotation" "Contiene la lógica de Eventos de Cotizacion" "Java - SpringBoot API"{
+                    group "offer" {
+                            offerController = component "OfferController" "Permite a los usuarios la gestion de datos de oferta de proveedores." "Spring MVC - Rest Controller"
+                            offerService = component "OfferService" "Contiene la logica para la administracion de oferta de proveedores" "Spring MVC - Service"
+                            offerRepository = component "OfferRepository" " Interfaz operaciones de acceso a datos" "Spring MVC - Repository"
+                    }
                 }
 
                 msAuthDB = container "BD mm_auth" "Almacena datos de usuarios y credenciales." "SQL Server" "Database"
                 msProviderDB = container "BD mm_provider" "Almacena datos de proveedores" "SQL Server" "Database"
                 msDataDB = container "BD mm_data" "Almacena registros relacionados con archivos." "SQL Server" "Database"
                 msMarketDB = container "BD mm_market" "Almacena datos de mercado." "SQL Server" "Database"
+                msEntityDB = container "BD mm_public_entity" "Almacena datos relacionados con entidades y COUPA." "SQL Server" "Database"
+                msQuotationDB = container "BD mm_quotation" "Almacena datos relacionados con los eventos de cotizacion " "SQL Server" "Database"
+                msOrderDB = container "BD mm_order" "Almacena datos relacionados con las ordenes de compra" "SQL Server" "Database"
+
             }
            
             
         }
         emailSystem = softwareSystem "Email - SMTP" "Envio de correos a traves de servidor SMTP" "Existing System"
+        COUPASystem = softwareSystem "COUPA - API REST" "Entidad repositorio de usuarios y info entidad" "Existing System"
+        SIIFSystem = softwareSystem "SIIF - API REST" "Validacion de CDP" "Existing System"
         
         #Relationships
         system -> emailSystem "Envía correo electrónico usando" 
+        system -> COUPASystem "COUPA Sincronizaciond de usuarios entidad" 
+        system -> SIIFSystem "SIIF Validacion de CDP Ministerio de Hacienda" 
+        
         admin -> spaAdmin "Utiliza"
         provider -> spaProvider "Utiliza"
+        entity -> spaEntity "Utiliza"
 
-        #Relationships microservices------------------------------------------------
+
+
+        #Relationships microservices and DATABASES------------------------------------------------
         msAuth -> msAuthDB "Realiza lectura y escritura" "Spring Data/JPA"
         msProvider -> msProviderDB "Realiza  lectura y escritura" "Spring Data/JPA"
         msData -> msDataDB "Realiza lectura y escritura" "Spring Data/JPA"
         msMarket -> msMarketDB "Realiza lectura y escritura" "Spring Data/JPA"
+        msEntity -> msEntityDB "Realiza lectura y escritura" "Spring Data/JPA"
+        msQuotation -> msQuotationDB "Realiza lectura y escritura" "Spring Data/JPA"
+        msOrder -> msOrderDB "Realiza lectura y escritura" "Spring Data/JPA"
+
+
+        #Relationships SPA and MS------------------------------------------------
         spaAdmin -> msAuth "Realiza llamadas API a" "JSON/HTTP"
         spaProvider -> msAuth "Realiza llamadas API a" "JSON/HTTP"
+        spaEntity -> msAuth "Realiza llamadas API a" "JSON/HTTP"
+        
         spaAdmin -> msMarket "Realiza llamadas API a" "JSON/HTTP"
         spaProvider -> msMarket "Realiza llamadas API a" "JSON/HTTP"
+        spaEntity -> msMarket "Realiza llamadas API a" "JSON/HTTP"
+        
         spaAdmin -> msData "Realiza llamadas API a" "JSON/HTTP"
         spaProvider -> msData "Realiza llamadas API a" "JSON/HTTP"
+        spaEntity -> msData "Realiza llamadas API a" "JSON/HTTP"
+
         msMarket -> msProvider "Realiza llamadas API a" "JSON/HTTP"
+        msMarket -> msOrder "Realiza llamadas API a" "JSON/HTTP"
+        msMarket -> msQuotation "Realiza llamadas API a" "JSON/HTTP"
+        msMarket -> msEntity "Realiza llamadas API a" "JSON/HTTP"
         
         #Relationships ms_auth-----------------------------------------------------
         #--auth
         spaAdmin -> authController "Realiza llamadas API a" "JSON/HTTP"
         spaProvider -> authController "Realiza llamadas API a" "JSON/HTTP"
+        spaEntity -> authController "Realiza llamadas API a" "JSON/HTTP"
+
         authController -> authService "Utiliza"
         authService -> securityComponent "Utiliza"
         authService -> authUserRepository "Utiliza"
@@ -155,6 +223,8 @@ workspace "Mi Mercado"{
         #--user
         spaAdmin -> authUserController "Realiza llamadas API a" "JSON/HTTP"
         spaProvider -> authUserController "Realiza llamadas API a" "JSON/HTTP"
+        spaEntity -> authUserController "Realiza llamadas API a" "JSON/HTTP"
+        
         authUserController -> authUserService "Utiliza"
         authUserService -> authUserRepository "Utiliza"
         authUserRepository -> msAuthDB "Realiza lectura y escritura" "Spring Data/JPA"
@@ -178,6 +248,12 @@ workspace "Mi Mercado"{
         authCodeService -> emailService "Utiliza"
         emailService -> emailSystem "Envía correo electrónico usando" 
 
+        #--emais
+        authNotificationController -> authNotificationService "Utiliza"
+        authNotificationService -> authNotificationRepository "Utiliza"
+        authNotificationRepository -> msAuthDB "Realiza lectura y escritura"
+        authNotificationService -> emailSystem "Envía correo electrónico usando SMTP" 
+
 
         #Relationships ms_provider-----------------------------------------------------
         #--provider
@@ -198,9 +274,12 @@ workspace "Mi Mercado"{
         providerTypeRepository -> msProviderDB "Realiza lectura y escritura" "Spring Data/JPA"
 
         #Relationships ms_data---------------------------------------------------------
+        
         #--azurefile
         spaAdmin ->  azureFileController "Realiza llamadas API a" "JSON/HTTP"
         spaProvider -> azureFileController "Realiza llamadas API a" "JSON/HTTP"
+        spaEntity -> azureFileController "Realiza llamadas API a" "JSON/HTTP"
+
         azureFileController -> azureFileService "Utiliza"
         azureFileService -> azureFileRepository "Utiliza"
         azureFileRepository -> msDataDB "Realiza lectura y escritura" "Spring Data/JPA"
@@ -225,20 +304,6 @@ workspace "Mi Mercado"{
         paramFilesController -> paramFilesService "Utiliza"
         paramFilesService -> paramFilesRepository "Utiliza"
         paramFilesRepository -> msDataDB "Realiza lectura y escritura" "Spring Data/JPA"
-
-        #--product Category
-        spaAdmin ->  productCategoryController "Realiza llamadas API a" "JSON/HTTP"
-        spaProvider -> productCategoryController "Realiza llamadas API a" "JSON/HTTP"
-        productCategoryController -> productCategoryService "Utiliza"
-        productCategoryService -> productCategoryRepository "Utiliza"
-        productCategoryRepository -> msDataDB "Realiza lectura y escritura" "Spring Data/JPA"
-
-        #--unit
-        spaAdmin ->  unitController "Realiza llamadas API a" "JSON/HTTP"
-        spaProvider -> unitController "Realiza llamadas API a" "JSON/HTTP"
-        unitController -> unitService "Utiliza"
-        unitService -> unitRepository "Utiliza"
-        unitRepository -> msDataDB "Realiza lectura y escritura" "Spring Data/JPA"
 
         #Relationships ms_market---------------------------------------------------------
         #--catalog
@@ -267,6 +332,19 @@ workspace "Mi Mercado"{
         providerClient -> msProvider "Realiza llamadas API a" "JSON/HTTP"
         providerRegisterRepository -> msMarketDB "Realiza lectura y escritura" "Spring Data/JPA"
         providerFileStatusRepository -> msMarketDB "Realiza lectura y escritura" "Spring Data/JPA"
+        
+
+        #--product Category
+        spaAdmin ->  productCategoryController "Realiza llamadas API a" "JSON/HTTP"
+        productCategoryController -> productCategoryService "Utiliza"
+        productCategoryService -> productCategoryRepository "Utiliza"
+        productCategoryRepository -> msDataDB "Realiza lectura y escritura" "Spring Data/JPA"
+
+        #--unit
+        spaAdmin ->  unitController "Realiza llamadas API a" "JSON/HTTP"
+        unitController -> unitService "Utiliza"
+        unitService -> unitRepository "Utiliza"
+        unitRepository -> msDataDB "Realiza lectura y escritura" "Spring Data/JPA"
 
     }
 
@@ -299,10 +377,28 @@ workspace "Mi Mercado"{
             description "El diagrama de componentes msData de la aplicación API."
         }
 
-         component msMarket {
+        component msMarket {
             include *
             autolayout tb
             description "El diagrama de componentes msMarket de la aplicación API."
+        }
+        
+        component msEntity {
+            include *
+            autolayout tb
+            description "El diagrama de componentes msEntity de la aplicación API."
+        }
+
+        component msQuotation {
+            include *
+            autolayout tb
+            description "El diagrama de componentes msQuotation de la aplicación API."
+        }
+
+        component msOrder {
+            include *
+            autolayout tb
+            description "El diagrama de componentes msOrder de la aplicación API."
         }
         theme default
 
