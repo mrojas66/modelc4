@@ -11,15 +11,33 @@ workspace "Mi Mercado"{
                 spaAdmin = container "SPA - Administrador" "Aplicación web para perfil administrador" "JavaScript - Angular" "Web Browser"
                 spaProvider = container "SPA - Proveedor" "Aplicación web para perfil proveedor" "JavaScript - Angular" "Web Browser"
                 spaEntity = container "SPA - Entidad" "Aplicación web para perfil entidad" "JavaScript - Angular" "Web Browser"{
+                    group "app-module" {
+                        AppComponent = component "AppComponent" "Componente de entrada" "Angular"
+                    }
                     group "public-module" {
                         LoginComponent = component "LoginComponent" "Layout del Login de Entidad" "Angular"
-                        AppComponent = component "AppComponent" "Componente de Entrada" "Angular"
                     }
                     group "private-module" {
-                        PrivateComponent = component "PrivateComponent" "Layout del Login de Entidad" "Angular"
-                        UserComponent = component "UserComponent" "Layout del Login de Entidad" "Angular"
+                        PrivateComponent = component "PrivateComponent" "Contiene la logica para el sidebar y la información del usuario" "Angular"
+                        ProductsComponent = component "ProductsComponent" "Obtiene la lista de catalogos" "Angular"
+                        BasketComponent = component "BasketComponent" "Permite administrar la canasta" "Angular"
+                        EventsComponent = component "EventsComponent" "Permite manejar los eventos de cotización" "Angular"
+                        QuotationsPageComponent = component "QuotationsPageComponent" "Contiene los componentes para administrar mis cotizaciones" "Angular"
+                        PurchaseOrderComponent = component "PurchaseOrderComponent" "Obtiene la información de todas las ordenes, permite navegar a componentes para administrar ordenes" "Angular"
+                        UsersComponent = component "UsersComponent" "Permite administrar los usuarios" "Angular"
                     }
-                    AuthServiceTS = component "AuthServiceTS" "Servicios/Fetch de API" "Angular"
+                    group "core" {
+                        AuthServiceTS = component "AuthServiceTS" "Contiene la logica para manejar token y hacer llamados HTTP" "Angular"
+                        CatalogServiceTS = component "CatalogServiceTS" "Contiene la logica para obtener la información de los catalogos" "Angular"
+                        BasketServiceTS = component "BasketServiceTS" "Contiene la logica para gestionar la canasta en localStorage" "Angular"
+                        DataPrivateServiceTS = component "DataPrivateServiceTS" "Contiene la logica obtener informacion de productos descarga archivos" "Angular"
+                        EventsServiceTS = component "EventsServiceTS" "Contiene la logica para obtener y enviar la información de cotización" "Angular"
+                        EntityServiceTS = component "EntityServiceTS" "Permite obtener la información de entidad" "Angular"
+                        MyMarketServiceTS = component "MyMarketServiceTS" "Permite obtener y enviar información relacionada con mi mercado" "Angular"
+                        OriginServiceTS = component "OriginServiceTS" "Permite obtener y enviar información de origen" "Angular"
+                        ProviderServiceTS = component "ProviderServiceTS" "Permite obtener y enviar información de proveedor" "Angular"
+                        UserServiceTS = component "UserServiceTS" "Permite obtener y enviar información de los usuarios" "Angular"
+                    } 
                 }
             }
             
@@ -358,13 +376,37 @@ workspace "Mi Mercado"{
 
         #Relationships spaEntity-----------------------------------------------------
         #--spaEntity
-        LoginComponent -> AuthServiceTS "Utilza"
-        UserComponent -> AuthServiceTS "Utilza"
-        AppComponent -> PrivateComponent "Si Guard es verdadero"
-        AuthServiceTS -> msAuth
-        AuthServiceTS -> msData
-
-    }
+        AppComponent -> LoginComponent "Inicializa a"
+        LoginComponent -> AuthServiceTS "utiliza para iniciar sesion"
+        AuthServiceTS -> PrivateComponent "Si usuario es valido"
+        AuthServiceTS -> msAuth "Realiza peticiones a" "JSON/HTTP"
+        AuthServiceTS -> msEntity "Realiza peticiones a" "JSON/HTTP"
+        PrivateComponent -> ProductsComponent "Permite navegar a" 
+        PrivateComponent -> BasketComponent "Permite navegar a"
+        PrivateComponent -> EventsComponent "Permite navegar a"
+        PrivateComponent -> QuotationsPageComponent "Permite navegar a"
+        PrivateComponent -> PurchaseOrderComponent "Permite navegar a"
+        PrivateComponent -> UsersComponent "Permite navegar a"
+        CatalogServiceTS -> msMarket "Realiza peticiones a" "JSON/HTTP"
+        DataPrivateServiceTS -> msData "Realiza peticiones a" "JSON/HTTP"
+        DataPrivateServiceTS -> msMarket "Realiza peticiones a" "JSON/HTTP"
+        EntityServiceTS -> msEntity "Realiza peticiones a" "JSON/HTTP"
+        MyMarketServiceTS -> msMarket "Realiza peticiones a" "JSON/HTTP"
+        OriginServiceTS -> msQuotation "Realiza peticiones a" "JSON/HTTP"
+        ProviderServiceTS -> msProvider "Realiza peticiones a" "JSON/HTTP"
+        UserServiceTS -> msAuth "Realiza peticiones a" "JSON/HTTP"
+        ProductsComponent -> CatalogServiceTS "Utiliza"
+        BasketComponent -> BasketServiceTS "Utiliza"
+        EventsComponent -> DataPrivateServiceTS "Utiliza"
+        EventsComponent -> CatalogServiceTS "Utiliza"
+        EventsComponent -> MyMarketServiceTS "Utiliza"
+        EventsComponent -> EventsServiceTS "Utiliza"
+        EventsComponent -> OriginServiceTS "Utiliza"
+        EventsComponent -> EntityServiceTS "Utiliza"
+        EventsComponent -> AuthServiceTS "Utiliza"
+        EventsComponent -> BasketServiceTS "Utiliza"
+        PurchaseOrderComponent -> MyMarketServiceTS "Utiliza"
+    } 
 
     views {
         systemContext system {
