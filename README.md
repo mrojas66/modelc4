@@ -2,6 +2,11 @@
 
 Run diagram c4
 
+https://c4model.com/
+
+https://docs.structurizr.com/lite/quickstart
+
+
 ```docker pull structurizr/lite```
 
 PATH es el path de tu proyecto 
