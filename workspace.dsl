@@ -8,35 +8,89 @@ workspace "Mi Mercado"{
 
         system = softwareSystem "Mi Mercado - 2023" "Software para la administración ofertas empresariales"{
             group "Single Page Applications - Front-end"{
-                spaAdmin = container "SPA - Administrador" "Aplicación web para perfil administrador" "JavaScript - Angular" "Web Browser"
-                spaProvider = container "SPA - Proveedor" "Aplicación web para perfil proveedor" "JavaScript - Angular" "Web Browser"
+                spaAdmin = container "SPA - Administrador" "Aplicación web para perfil administrador" "JavaScript - Angular" "Web Browser"{
+                    group "adm-app-module" {
+                        AdmAppComponent = component "AdmAppComponent" "Componente de entrada" "Angular"
+                    }
+                    group "adm-public-module" {
+                        AdmLoginComponent = component "AdmLoginComponent" "Layout del login administrador" "Angular"
+                        AdmRememberVerifyComponent = component "AdmRememberVerifyComponent" "Permite restablecer la contraseña" "Angular"
+                        AdmSendEmailComponent = component "AdmSendEmailComponent" "Permite enviar email para restablecer contraseña" "Angular"
+                    }
+                    group "adm-private-module" {
+                        AdmPrivateComponent = component "AdmPrivateComponent" "Contiene la logica para el sidebar y la información del usuario" "Angular"
+                        AdmPurchaseOrderComponent = component "AdmPurchaseOrderComponent" "Obtiene la información de todas las ordenes, permite navegar a componentes para administrar ordenes" "Angular"
+                        AdmOrderDetailComponent = component "AdmOrderDetailComponent" "Permite administrar una orden especifica" "Angular"
+                        AdmProvidersComponent = component "AdmProvidersComponent" "Permite gestionar el estado de los proveedores" "Angular"
+                        AdmProviderDetailsComponent = component "AdmProviderDetailsComponent" "Permite gestionar la información de un proveedor especifico" "Angular"
+                        AdmEntitiesComponent = component "AdmEntitiesComponent" "Permite gestionar las entidades" "Angular"
+                        AdmCatalogsComponent = component "AdmCatalogsComponent" "Permite visualizar los catalogos" "Angular"
+                        AdmLogsComponent = component "AdmLogsComponent" "" "Angular"
+                        AdmParametersComponent = component "AdmParametersComponent" "" "Angular"
+                        AdmPlatformComponent = component "AdmPlatformComponent" "Permite gestionar la información de la plataforma" "Angular'
+                    }
+                    group "adm-core" {
+                        AdmAuthService = component "AdmAuthService" "Contiene la logica para manejar token y hacer llamdos HTTP" "Angular"
+                        AdmCatalogServiceTS = component "AdmCatalogServiceTS" "Contiene la logica para obtener la información de los catalogos" "Angular"
+                        AdmDataPrivateServiceTS = component "AdmDataPrivateServiceTS" "Contiene la logica obtener informacion de productos descarga archivos" "Angular"
+                        AdmEntityServiceTS = component "AdmEntityServiceTS" "Permite obtener la información de entidad" "Angular"
+                        AdmMyMarketServiceTS = component "AdmMyMarketServiceTS" "Permite obtener y enviar información relacionada con mi mercado" "Angular"
+                        AdmOriginServiceTS = component "AdmOriginServiceTS" "Permite obtener y enviar información de origen" "Angular"
+                        AdmProviderServiceTS = component "AdmProviderServiceTS" "Permite obtener y enviar información de proveedor" "Angular"
+                        AdmUserServiceTS = component "EntUserServiceTS" "Permite obtener y enviar información de los usuarios" "Angular"
+                    }
+                }
+                spaProvider = container "SPA - Proveedor" "Aplicación web para perfil proveedor" "JavaScript - Angular" "Web Browser" {
+                    group "prov-app-module" {
+                        ProvAppComponent = component "ProvAppComponent" "Componente de entrada" "Angular"
+                    }
+                    group "prov-public-module" {
+                        ProvLoginComponent = component "ProvLoginComponent" "Layout del login administrador" "Angular"
+                        ProvRememberVerifyComponent = component "ProvRememberVerifyComponent" "Permite restablecer la contraseña" "Angular"
+                        ProvSendEmailComponent = component "ProvSendEmailComponent" "Permite enviar email para restablecer contraseña" "Angular"
+                    }
+                    group "prov-private-module" {
+                    
+                    }
+                    group "prov-core" {
+                        ProvAuthService = component "ProvAuthService" "Contiene la logica para manejar token y hacer llamdos HTTP" "Angular"
+                        ProvCatalogServiceTS = component "ProvCatalogServiceTS" "Contiene la logica para obtener la información de los catalogos" "Angular"
+                        ProvMyDocumentService = component "ProvMyDocumentService" "Permite gestionar los documentos de proveedor" "Angular"
+                        ProvMyMarketServiceTS = component "ProvMyMarketServiceTS" "Permite obtener y enviar información relacionada con mi mercado" "Angular"
+                        ProvOriginServiceTS = component "ProvOriginServiceTS" "Permite obtener y enviar información de origen" "Angular"
+                        ProvProviderServiceTS = component "ProvProviderServiceTS" "Permite obtener y enviar información de proveedor" "Angular"
+                    }
+                }
                 spaEntity = container "SPA - Entidad" "Aplicación web para perfil entidad" "JavaScript - Angular" "Web Browser"{
-                    group "app-module" {
-                        AppComponent = component "AppComponent" "Componente de entrada" "Angular"
+                    group "ent-app-module" {
+                        EntAppComponent = component "EntAppComponent" "Componente de entrada" "Angular"
                     }
-                    group "public-module" {
-                        LoginComponent = component "LoginComponent" "Layout del Login de Entidad" "Angular"
+                    group "ent-public-module" {
+                        EntLoginComponent = component "EntLoginComponent" "Layout del Login de Entidad" "Angular"
                     }
-                    group "private-module" {
-                        PrivateComponent = component "PrivateComponent" "Contiene la logica para el sidebar y la información del usuario" "Angular"
-                        ProductsComponent = component "ProductsComponent" "Obtiene la lista de catalogos" "Angular"
-                        BasketComponent = component "BasketComponent" "Permite administrar la canasta" "Angular"
-                        EventsComponent = component "EventsComponent" "Permite manejar los eventos de cotización" "Angular"
-                        QuotationsPageComponent = component "QuotationsPageComponent" "Contiene los componentes para administrar mis cotizaciones" "Angular"
-                        PurchaseOrderComponent = component "PurchaseOrderComponent" "Obtiene la información de todas las ordenes, permite navegar a componentes para administrar ordenes" "Angular"
-                        UsersComponent = component "UsersComponent" "Permite administrar los usuarios" "Angular"
+                    group "ent-private-module" {
+                        EntPrivateComponent = component "EntPrivateComponent" "Contiene la logica para el sidebar y la información del usuario" "Angular"
+                        EntProductsComponent = component "ProductsComponent" "Obtiene la lista de catalogos" "Angular"
+                        EntBasketComponent = component "EntBasketComponent" "Permite administrar la canasta" "Angular"
+                        EntEventsComponent = component "EntEventsComponent" "Permite manejar los eventos de cotización" "Angular"
+                        EntQuotationsPageComponent = component "EntQuotationsPageComponent" "Contiene los componentes para administrar mis cotizaciones" "Angular"
+                        EntMyQuotationsComponent = component "EntMyQuotationsComponent" "Componente principal información mis cotizaciones" "Angular"
+                        EntOffersComponent = component "EntOffersComponent" "Permite manejar las ofertas de la cotización" "Angular"
+                        EntPurchaseOrderComponent = component "EntPurchaseOrderComponent" "Obtiene la información de todas las ordenes, permite navegar a componentes para administrar ordenes" "Angular"
+                        EntOrderDetailComponent = component "EntOrderDetailComponent" "Permite administrar una orden especifica" "Angular"
+                        EntUsersComponent = component "EntUsersComponent" "Permite administrar los usuarios" "Angular"
                     }
-                    group "core" {
-                        AuthServiceTS = component "AuthServiceTS" "Contiene la logica para manejar token y hacer llamados HTTP" "Angular"
-                        CatalogServiceTS = component "CatalogServiceTS" "Contiene la logica para obtener la información de los catalogos" "Angular"
-                        BasketServiceTS = component "BasketServiceTS" "Contiene la logica para gestionar la canasta en localStorage" "Angular"
-                        DataPrivateServiceTS = component "DataPrivateServiceTS" "Contiene la logica obtener informacion de productos descarga archivos" "Angular"
-                        EventsServiceTS = component "EventsServiceTS" "Contiene la logica para obtener y enviar la información de cotización" "Angular"
-                        EntityServiceTS = component "EntityServiceTS" "Permite obtener la información de entidad" "Angular"
-                        MyMarketServiceTS = component "MyMarketServiceTS" "Permite obtener y enviar información relacionada con mi mercado" "Angular"
-                        OriginServiceTS = component "OriginServiceTS" "Permite obtener y enviar información de origen" "Angular"
-                        ProviderServiceTS = component "ProviderServiceTS" "Permite obtener y enviar información de proveedor" "Angular"
-                        UserServiceTS = component "UserServiceTS" "Permite obtener y enviar información de los usuarios" "Angular"
+                    group "ent-core" {
+                        EntAuthServiceTS = component "EntAuthServiceTS" "Contiene la logica para manejar token y hacer llamados HTTP" "Angular"
+                        EntCatalogServiceTS = component "EntCatalogServiceTS" "Contiene la logica para obtener la información de los catalogos" "Angular"
+                        EntBasketServiceTS = component "EntBasketServiceTS" "Contiene la logica para gestionar la canasta en localStorage" "Angular"
+                        EntDataPrivateServiceTS = component "EntDataPrivateServiceTS" "Contiene la logica obtener informacion de productos descarga archivos" "Angular"
+                        EntEventsServiceTS = component "EntEventsServiceTS" "Contiene la logica para obtener y enviar la información de cotización" "Angular"
+                        EntEntityServiceTS = component "EntEntityServiceTS" "Permite obtener la información de entidad" "Angular"
+                        EntMyMarketServiceTS = component "EntMyMarketServiceTS" "Permite obtener y enviar información relacionada con mi mercado" "Angular"
+                        EntOriginServiceTS = component "EntOriginServiceTS" "Permite obtener y enviar información de origen" "Angular"
+                        EntProviderServiceTS = component "EntProviderServiceTS" "Permite obtener y enviar información de proveedor" "Angular"
+                        EntUserServiceTS = component "EntUserServiceTS" "Permite obtener y enviar información de los usuarios" "Angular"
                     } 
                 }
             }
@@ -376,36 +430,48 @@ workspace "Mi Mercado"{
 
         #Relationships spaEntity-----------------------------------------------------
         #--spaEntity
-        AppComponent -> LoginComponent "Inicializa a"
-        LoginComponent -> AuthServiceTS "utiliza para iniciar sesion"
-        AuthServiceTS -> PrivateComponent "Si usuario es valido"
-        AuthServiceTS -> msAuth "Realiza peticiones a" "JSON/HTTP"
-        AuthServiceTS -> msEntity "Realiza peticiones a" "JSON/HTTP"
-        PrivateComponent -> ProductsComponent "Permite navegar a" 
-        PrivateComponent -> BasketComponent "Permite navegar a"
-        PrivateComponent -> EventsComponent "Permite navegar a"
-        PrivateComponent -> QuotationsPageComponent "Permite navegar a"
-        PrivateComponent -> PurchaseOrderComponent "Permite navegar a"
-        PrivateComponent -> UsersComponent "Permite navegar a"
-        CatalogServiceTS -> msMarket "Realiza peticiones a" "JSON/HTTP"
-        DataPrivateServiceTS -> msData "Realiza peticiones a" "JSON/HTTP"
-        DataPrivateServiceTS -> msMarket "Realiza peticiones a" "JSON/HTTP"
-        EntityServiceTS -> msEntity "Realiza peticiones a" "JSON/HTTP"
-        MyMarketServiceTS -> msMarket "Realiza peticiones a" "JSON/HTTP"
-        OriginServiceTS -> msQuotation "Realiza peticiones a" "JSON/HTTP"
-        ProviderServiceTS -> msProvider "Realiza peticiones a" "JSON/HTTP"
-        UserServiceTS -> msAuth "Realiza peticiones a" "JSON/HTTP"
-        ProductsComponent -> CatalogServiceTS "Utiliza"
-        BasketComponent -> BasketServiceTS "Utiliza"
-        EventsComponent -> DataPrivateServiceTS "Utiliza"
-        EventsComponent -> CatalogServiceTS "Utiliza"
-        EventsComponent -> MyMarketServiceTS "Utiliza"
-        EventsComponent -> EventsServiceTS "Utiliza"
-        EventsComponent -> OriginServiceTS "Utiliza"
-        EventsComponent -> EntityServiceTS "Utiliza"
-        EventsComponent -> AuthServiceTS "Utiliza"
-        EventsComponent -> BasketServiceTS "Utiliza"
-        PurchaseOrderComponent -> MyMarketServiceTS "Utiliza"
+        EntAppComponent -> EntLoginComponent "Inicializa a"
+        EntLoginComponent -> EntAuthServiceTS "utiliza para iniciar sesion"
+        EntAuthServiceTS -> EntPrivateComponent "Si usuario es valido"
+        EntAuthServiceTS -> msAuth "Realiza peticiones a" "JSON/HTTP"
+        EntAuthServiceTS -> msEntity "Realiza peticiones a" "JSON/HTTP"
+        EntPrivateComponent -> EntProductsComponent "Permite navegar a" 
+        EntPrivateComponent -> EntBasketComponent "Permite navegar a"
+        EntPrivateComponent -> EntEventsComponent "Permite navegar a"
+        EntPrivateComponent -> EntQuotationsPageComponent "Permite navegar a"
+        EntPrivateComponent -> EntPurchaseOrderComponent "Permite navegar a"
+        EntPrivateComponent -> EntUsersComponent "Permite navegar a"
+        EntCatalogServiceTS -> msMarket "Realiza peticiones a" "JSON/HTTP"
+        EntDataPrivateServiceTS -> msData "Realiza peticiones a" "JSON/HTTP"
+        EntDataPrivateServiceTS -> msMarket "Realiza peticiones a" "JSON/HTTP"
+        EntEntityServiceTS -> msEntity "Realiza peticiones a" "JSON/HTTP"
+        EntMyMarketServiceTS -> msMarket "Realiza peticiones a" "JSON/HTTP"
+        EntOriginServiceTS -> msQuotation "Realiza peticiones a" "JSON/HTTP"
+        EntProviderServiceTS -> msProvider "Realiza peticiones a" "JSON/HTTP"
+        EntUserServiceTS -> msAuth "Realiza peticiones a" "JSON/HTTP"
+        EntProductsComponent -> EntCatalogServiceTS "Utiliza"
+        EntBasketComponent -> EntBasketServiceTS "Utiliza"
+        EntEventsComponent -> EntDataPrivateServiceTS "Utiliza"
+        EntEventsComponent -> EntCatalogServiceTS "Utiliza"
+        EntEventsComponent -> EntMyMarketServiceTS "Utiliza"
+        EntEventsComponent -> EntEventsServiceTS "Utiliza"
+        EntEventsComponent -> EntOriginServiceTS "Utiliza"
+        EntEventsComponent -> EntEntityServiceTS "Utiliza"
+        EntEventsComponent -> EntAuthServiceTS "Utiliza"
+        EntEventsComponent -> EntBasketServiceTS "Utiliza"
+        EntPurchaseOrderComponent -> EntMyMarketServiceTS "Utiliza"
+        EntOrderDetailComponent -> EntPurchaseOrderComponent "Hace parte de"
+        EntOrderDetailComponent -> EntMyMarketServiceTS "Utiliza"
+        EntOrderDetailComponent -> EntOriginServiceTS "Utiliza"
+        EntOrderDetailComponent -> EntAuthServiceTS "Utiliza"
+        EntOrderDetailComponent -> EntDataPrivateServiceTS "Utiliza"
+        EntOrderDetailComponent -> EntEntityServiceTS "Utiliza"
+        EntMyQuotationsComponent -> EntQuotationsPageComponent "Compone"
+        EntMyQuotationsComponent -> EntOffersComponent "Permite navegar a"
+
+        #Relationships spaAdmin-----------------------------------------------------
+        #--spaAdmin
+        AdmAppComponent -> AdmLoginComponent "Inicializa a"
     } 
 
     views {
