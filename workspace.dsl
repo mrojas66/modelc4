@@ -48,9 +48,21 @@ workspace "Mi Mercado"{
                         ProvLoginComponent = component "ProvLoginComponent" "Layout del login administrador" "Angular"
                         ProvRememberVerifyComponent = component "ProvRememberVerifyComponent" "Permite restablecer la contraseña" "Angular"
                         ProvSendEmailComponent = component "ProvSendEmailComponent" "Permite enviar email para restablecer contraseña" "Angular"
+                        ProvRegisterComponent = component "ProvRegisterComponent" "Permite a los proveedores registrarse" "Angular"
+                        ProvRegisterFinalComponent = component "ProvRegisterFinalComponent" "Permite completar el registro a los proveedores" "Angular"
                     }
                     group "prov-private-module" {
-                    
+                        ProvPrivateComponent = component "ProvPrivateComponent" "Contiene la logica para el sidebar y la información del usuario" "Angular"
+                        ProvHomeComponent = component "ProvHomeComponent" "Permite visualizar los catalogos disponibles y catalogo actual" "Angular"
+                        ProvProfileComponent = component "ProvProfileComponent" "Permite visualizar la información del proveedor" "Angular"
+                        ProvMyDocumentsComponent = component "ProvMyDocumentsComponent" "Permite gestionar los documentos del proveedor" "Angular"
+                        ProvCatalogComponent = component "ProvCatalogComponent" "Premtie visualizar la información de los catalogos" "Angular"
+                        ProvQuotesPageComponent = component "ProvQuotesPageComponent" "Contiene los componentes para administrar mis cotizaciones" "Angular"
+                        ProvMyQuotesComponent = component "ProvMyQuotesComponent" "Permite visualizar las información de las cotizaciones" "Angular"
+                        ProvQuotesToAnswerComponent = component "ProvQuotesToAnswerComponent" "Permite vizualizar las cotizaciones por responder y gestionar cotizacion especifica" "Angular"
+                        ProvQuotesAnsweredComponent = component "ProvQuotesAnsweredComponent" "Permite visualizar las cotizaciones respondidas y gestionar cotizacion especifica" "Angular"
+                        ProvPurchaseOrderComponent = component "PurchaseOrderComponent" "Permite visualizar todas las ordenes" "Angular"
+                        ProvPurchaseOrderDetailComponent = component "ProvPurchaseOrderDetailComponent" "Permite gestionar una orden en especifico" "Angular"
                     }
                     group "prov-core" {
                         ProvAuthService = component "ProvAuthService" "Contiene la logica para manejar token y hacer llamdos HTTP" "Angular"
