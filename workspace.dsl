@@ -19,6 +19,7 @@ workspace "Mi Mercado"{
                     }
                     group "adm-private-module" {
                         AdmPrivateComponent = component "AdmPrivateComponent" "Contiene la logica para el sidebar y la información del usuario" "Angular"
+                        AdmAdminComponent = component "AdmAdminComponent" "Permite gestionar la información de los usuarios" "Angular"
                         AdmPurchaseOrderComponent = component "AdmPurchaseOrderComponent" "Obtiene la información de todas las ordenes, permite navegar a componentes para administrar ordenes" "Angular"
                         AdmOrderDetailComponent = component "AdmOrderDetailComponent" "Permite administrar una orden especifica" "Angular"
                         AdmProvidersComponent = component "AdmProvidersComponent" "Permite gestionar el estado de los proveedores" "Angular"
@@ -27,7 +28,10 @@ workspace "Mi Mercado"{
                         AdmCatalogsComponent = component "AdmCatalogsComponent" "Permite visualizar los catalogos" "Angular"
                         AdmLogsComponent = component "AdmLogsComponent" "" "Angular"
                         AdmParametersComponent = component "AdmParametersComponent" "" "Angular"
-                        AdmPlatformComponent = component "AdmPlatformComponent" "Permite gestionar la información de la plataforma" "Angular'
+                        AdmPlatformComponent = component "AdmPlatformComponent" "Permite gestionar la información de la plataforma" "Angular"
+                        AdmProfileComponent = component "AdmProfileComponent" "Permite visualizar la información del usuario" "Angular"
+                        AdmProfileEditComponent = component "AdmProfileEditComponent" "Permite editar la información del usuario" "Angular"
+                        AdmProfilePasswordComponent = component "AdmProfilePasswordComponent" "Permite al usuario cambiar la contraseña" "Angular"
                     }
                     group "adm-core" {
                         AdmAuthService = component "AdmAuthService" "Contiene la logica para manejar token y hacer llamdos HTTP" "Angular"
@@ -484,6 +488,55 @@ workspace "Mi Mercado"{
         #Relationships spaAdmin-----------------------------------------------------
         #--spaAdmin
         AdmAppComponent -> AdmLoginComponent "Inicializa a"
+        AdmLoginComponent -> AdmAuthService "Utiliza para iniciar sesion"
+        AdmLoginComponent -> AdmSendEmailComponent "En caso de no recordar la contraseña"
+        AdmSendEmailComponent -> AdmRememberVerifyComponent "Completa el proceso recuperación de contraseña"
+        AdmAuthService -> AdmPrivateComponent "Si el usuario es valido"
+        AdmRememberVerifyComponent -> AdmLoginComponent "Redirige una vez se completa la redirección"
+        AdmPrivateComponent -> AdmAdminComponent "Permite navegar a"
+        AdmPrivateComponent -> AdmProvidersComponent "Permite navegar a"
+        AdmPrivateComponent -> AdmProviderDetailsComponent "Permite navegar a"
+        AdmPrivateComponent -> AdmEntitiesComponent "Permite navegar a"
+        AdmPrivateComponent -> AdmCatalogsComponent "Permite navegar a"
+        AdmPrivateComponent -> AdmLogsComponent "Permite navegar a"
+        AdmPrivateComponent -> AdmPurchaseOrderComponent "Permite navegar a"
+        AdmPrivateComponent -> AdmProfileComponent "Permite navegar a"
+        AdmPrivateComponent -> AdmParametersComponent "Permite navegar a"
+        AdmPrivateComponent -> AdmPlatformComponent "Permite navegar a"
+        AdmProfileComponent -> AdmProfileEditComponent "Permite navegar a"
+        AdmProfileComponent -> AdmProfilePasswordComponent "Permite navegar a"
+        AdmOrderDetailComponent -> AdmPurchaseOrderComponent "Compone"
+        AdmAuthService -> msAuth "Realiza peticiones a" "JSON/HTTP"
+        AdmCatalogServiceTS -> msMarket "Realiza peticiones a" "JSON/HTTP"
+        AdmDataPrivateServiceTS -> msMarket "Realiza peticiones a" "JSON/HTTP"
+        AdmDataPrivateServiceTS -> msData "Realiza peticiones a" "JSON/HTTP"
+        AdmEntityServiceTS -> msEntity "Realiza peticiones a" "JSON/HTTP"
+        AdmMyMarketServiceTS -> msMarket "Realiza peticiones a" "JSON/HTTP"
+        AdmOriginServiceTS -> msQuotation "Realiza peticiones a" "JSON/HTTP"
+        AdmProviderServiceTS -> msProvider "Realiza peticiones a" "JSON/HTTP"
+        AdmUserServiceTS -> msAuth "Realiza peticiones a" "JSON/HTTP"
+        AdmPurchaseOrderComponent -> AdmMyMarketServiceTS "Utiliza"
+        AdmOrderDetailComponent -> AdmMyMarketServiceTS "Utiliza"
+        AdmOrderDetailComponent -> AdmDataPrivateServiceTS "Utiliza"
+        AdmOrderDetailComponent -> AdmOriginServiceTS "Utiliza"
+        AdmAdminComponent -> AdmUserServiceTS "Utiliza"
+        AdmProvidersComponent -> AdmMyMarketServiceTS "Utiliza"
+        AdmProvidersComponent -> AdmDataPrivateServiceTS "Utiliza"
+        AdmProvidersComponent -> AdmProviderServiceTS "Utiliza"
+        AdmEntitiesComponent -> AdmEntityServiceTS "Utiliza"
+        AdmProviderDetailsComponent -> AdmMyMarketServiceTS "Utiliza"
+        AdmProviderDetailsComponent -> AdmDataPrivateServiceTS "Utiliza"
+        AdmProviderDetailsComponent -> AdmProviderServiceTS "Utiliza"
+        AdmProfileEditComponent -> AdmAuthService "Utiliza"
+        AdmProfilePasswordComponent -> AdmAuthService "Utiliza"
+        AdmParametersComponent -> AdmDataPrivateServiceTS "Utilza"
+        AdmParametersComponent -> AdmProviderServiceTS "Utilza"
+        AdmParametersComponent -> AdmOriginServiceTS "Utilza"
+        AdmParametersComponent -> AdmMyMarketServiceTS "Utilza"
+        AdmCatalogsComponent -> AdmCatalogServiceTS "Utiliza"
+        AdmLogsComponent -> AdmMyMarketServiceTS "Utiliza"
+        AdmPlatformComponent -> AdmMyMarketServiceTS "Utiliza"
+        AdmPlatformComponent -> AdmAuthService "Utiliza"
     } 
 
     views {
@@ -543,6 +596,18 @@ workspace "Mi Mercado"{
             include *
             autolayout tb
             description "El diagrama de componentes Front Entidad"
+        }
+
+        component spaAdmin {
+            include *
+            autolayout tb
+            description "El diagrama de componentes Front administrador"
+        }
+
+        component spaProvider {
+            include *
+            autolayout tb
+            description "El diagrama de componentes Front administrador"
         }
 
         
